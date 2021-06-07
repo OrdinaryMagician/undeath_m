@@ -32,4 +32,4 @@ Endless, immortal... For you death is merely a temporary setback, so as you can 
 
 At the moment, there's not much else to say about this mod, only scattered ideas exist for now, but it will all begin to take some form once focus is shifted from other projects in progress, so stay tuned.
 
---- Marisa
+ — Marisa
