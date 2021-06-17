@@ -26,10 +26,10 @@
 
 ### So... What is this even supposed to be?
 
-**UNDEATH** is a gameplay mod for **GZDoom** where you take on the role of a lone warrior of the **Anarukon** people, tasked with the mission of slaying the demon hordes of **Hell**.
+**UNDEATH** is a total conversion for **GZDoom** where you take on the role of a lone warrior of the **Anarukon** people, tasked with the mission of slaying the demon hordes of **Hell**.
 
 Endless, immortal... For you death is merely a temporary setback, so as you can imagine, this is pretty much a mod where you really just can't lose... Or is it?
 
-At the moment, there's not much else to say about this mod, only scattered ideas exist for now, but it will all begin to take some form once focus is shifted from other projects in progress, so stay tuned.
+At the moment, there's not much else to say about this, only scattered ideas exist for now, but it will all begin to take some form once focus is shifted from other projects in progress, so stay tuned.
 
  — Marisa
