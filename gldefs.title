@@ -1,0 +1,22 @@
+HardwareShader PostProcess beforebloom
+{
+	Name "undeathtitle1"
+	Shader "shaders/pp/UndeathTitleLogo.fp" 330
+	Texture basetex "graphics/unsigil_base.png"
+	Texture fadetex "graphics/unsigil_fade.png"
+	Texture glowtex "graphics/unsigil_glow.png"
+	Texture noisetex "textures/rgbnoise.png"
+	Uniform float timer
+}
+HardwareShader PostProcess beforebloom
+{
+	Name "undeathtitle2"
+	Shader "shaders/pp/UndeathTitleBlur.fp" 330
+}
+HardwareShader PostProcess beforebloom
+{
+	Name "undeathtitle3"
+	Shader "shaders/pp/UndeathTitleSmoke.fp" 330
+	Texture smoketex "graphics/unsigil_smoke.png"
+	Uniform float timer
+}

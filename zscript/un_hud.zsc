@@ -1,0 +1,5 @@
+// UNDEATH HUD code
+
+Class UnStatusBar : BaseStatusBar
+{
+}

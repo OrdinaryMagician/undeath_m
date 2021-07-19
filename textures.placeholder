@@ -1,0 +1,10 @@
+// GZDoom will whine otherwise
+graphic M_DOOM,1,1{}
+graphic M_NGAME,1,1{}
+graphic M_OPTION,1,1{}
+graphic M_LOADG,1,1{}
+graphic M_SAVEG,1,1{}
+graphic M_QUITG,1,1{}
+graphic M_EPISOD,1,1{}
+graphic M_NEWG,1,1{}
+graphic M_SKILL,1,1{}

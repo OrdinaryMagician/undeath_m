@@ -1,0 +1,101 @@
+GameInfo
+{
+	Border = 2, 0, "graphics/bord_tr.png", "graphics/bord_t.png", "graphics/bord_tl.png", "graphics/bord_r.png", "graphics/bord_l.png", "graphics/bord_br.png", "graphics/bord_b.png", "graphics/bord_bl.png"
+	BackpackType = "UnBackpack"
+	BorderFlat = "graphics/bord_flat.png"
+	ChatSound = "misc/chat"
+	ForceTextInMenus = true
+	TelefogHeight = 28
+	DimColor = "Black"
+	DimAmount = 0.5
+	Endoom = "ENDDEATH"
+	PickupColor = "White"
+	QuitMessages = "$QUITMSG"
+	MenuFontColor_Title = "Red"
+	MenuFontColor_Label = "White"
+	MenuFontColor_Value = "DarkGray"
+	MenuFontColor_Action = "White"
+	MenuFontColor_Header = "Red"
+	MenuFontColor_Highlight = "Brick"
+	MenuFontColor_Selection = "Brick"
+	MenuSliderColor = "Red"
+	MenuSliderBackColor = "DarkGray"
+	MenuBackButton = "graphics/unback.png"
+	PlayerClasses = "UnPlayerF", "UnPlayerM", "UnPlayerX"
+	PauseSign = "graphics/unpaused.png"
+	GibFactor = 0.5
+	CursorPic = "graphics/uncursor.png"
+	NoRandomPlayerClass = true
+	DontCrunchCorpses = true
+	PrecacheClasses = "UnPlayerF", "UnPlayerM", "UnPlayerX"
+	AddEventHandlers = "UnEventHandler", "UnStaticEventHandler"
+	MessageBoxClass = "UnMessageBox"
+	DefaultConversationMenuClass = "UnConversationMenu"
+	NoMergePickupMsg = true
+	StatusBarClass = "UnStatusBar"
+	StatScreen_Single = "DummyStatusScreen"
+	StatScreen_Coop = "DummyStatusScreen"
+	StatScreen_DM = "DummyStatusScreen"
+}
+
+ClearSkills
+
+Skill defaultskill
+{
+	SpawnFilter = normal
+	ACSReturn = 2
+	Name = "(Default Skill)"
+	DefaultSkill
+}
+
+Map TITLEMAP "UNDEATH Title Map"
+{
+	Music = ""
+	EventHandlers = "UnTitleHandler"
+}
+
+ClearEpisodes
+
+Episode UND01
+{
+	Name = "UNDEATH"
+	NoSkillMenu
+}
+
+Cluster 1
+{
+	Hub
+}
+
+DefaultMap
+{
+	Cluster = 1
+	Sky1 = "-noflat-"
+	NoIntermission
+	EvenLighting
+	Gravity = 950
+	AirControl = 0
+	AirSupply = 30
+	MapBackground = "graphics/unmapbg.png"
+	FallingDamage
+	MonsterFallingDamage
+	ProperMonsterFallingDamage
+	KeepFullInventory
+	CheckSwitchRange
+	UnFreezeSinglePlayerConversations
+	DisableSkyboxAO
+	LightAdditiveSurfaces = 1
+	LightMode = 0
+	PixelRatio = 1.0
+	NoLightFade
+}
+
+Map UND01 lookup "HUSTR_UND01"
+{
+	// TODO
+}
+
+DoomEdNums
+{
+	// TODO
+}

@@ -1,0 +1,10 @@
+// UNDEATH shared code
+
+Class UnBackpack : Inventory
+{
+	// PLACEHOLDER
+}
+
+Class DummyStatusScreen : StatusScreen
+{
+}

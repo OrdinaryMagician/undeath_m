@@ -1,0 +1,8 @@
+// menu definitions
+[default]
+MNU_NEWGAME = "New Game";
+MNU_GAMEFILES = "Load/Save";
+MNU_OPTIONS = "Options";
+MNU_INFO = "Help";
+MNU_QUITGAME = "Quit";
+QUITMSG = "\cjMay your rest be plentiful,\nfor the next battle awaits.\c-";

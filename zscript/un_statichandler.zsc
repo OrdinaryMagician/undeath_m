@@ -1,0 +1,20 @@
+// UNDEATH Static Handler
+
+Class UnStaticEventHandler : StaticEventHandler
+{
+	override void WorldUnloaded( WorldEvent e )
+	{
+		// when loading out of the titlemap, disable the logo shader
+		if ( level.mapname == "TITLEMAP" )
+		{
+			Shader.SetEnabled(players[consoleplayer],"undeathtitle1",false);
+			Shader.SetEnabled(players[consoleplayer],"undeathtitle2",false);
+			Shader.SetEnabled(players[consoleplayer],"undeathtitle3",false);
+		}
+	}
+	override void RenderOverlay( RenderEvent e )
+	{
+		Shader.SetEnabled(players[consoleplayer],"undeathretro",true);
+		Shader.SetUniform2f(players[consoleplayer],"undeathretro","cleanres",(CleanWidth_1,CleanHeight_1));
+	}
+}

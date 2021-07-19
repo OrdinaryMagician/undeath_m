@@ -1,0 +1,43 @@
+// UNDEATH base player code
+
+Class UnPlayer : PlayerPawn
+{
+	Default
+	{
+		+NOMENU;
+		+DONTTRANSLATE;
+	}
+}
+
+Class UnPlayerF : UnPlayer
+{
+	Default
+	{
+		Player.SoundClass "snd_sada";
+		Player.DisplayName "$T_UNPLAYERF";
+		Player.Portrait "graphics/portraits/pt_sada.png";
+		-NOMENU;
+	}
+}
+
+Class UnPlayerM : UnPlayer
+{
+	Default
+	{
+		Player.SoundClass "snd_zorou";
+		Player.DisplayName "$T_UNPLAYERM";
+		Player.Portrait "graphics/portraits/pt_zorou.png";
+		-NOMENU;
+	}
+}
+
+Class UnPlayerX : UnPlayer
+{
+	Default
+	{
+		Player.SoundClass "snd_nyakko";
+		Player.DisplayName "$T_UNPLAYERX";
+		Player.Portrait "graphics/portraits/pt_nyakko.png";
+		-NOMENU;
+	}
+}

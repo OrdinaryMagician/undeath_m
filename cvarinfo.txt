@@ -1,0 +1,2 @@
+// UNDEATH cvars
+server noarchive bool un_debugblast = false;

@@ -1,0 +1,9 @@
+IWad
+{
+	Name = "UNDEATH"
+	AutoName = "undeathgame"
+	Game = "Doom"
+	Config = "UNDEATH"
+	MapInfo = "mapinfo/mindefaults.txt"
+	NoKeyboardCheats
+}

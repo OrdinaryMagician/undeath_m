@@ -1,0 +1,7 @@
+.git
+*.md
+docimg
+models/*.blend
+models/*.blend1
+models/*.xcf
+tools

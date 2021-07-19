@@ -1,0 +1,49 @@
+// UNDEATH titlemap code
+
+Class UnTitleHandler : EventHandler
+{
+	ui TextureID logotex;
+
+	override void WorldLoaded( WorldEvent e )
+	{
+		Shader.SetEnabled(players[consoleplayer],"undeathtitle1",true);
+		Shader.SetEnabled(players[consoleplayer],"undeathtitle2",true);
+		Shader.SetEnabled(players[consoleplayer],"undeathtitle3",true);
+	}
+	override void WorldTick()
+	{
+		if ( level.maptime == 1 ) S_ChangeMusic("music/untitle.ogg");
+	}
+	override void UiTick()
+	{
+		if ( gamestate != GS_LEVEL ) return;
+		// you're not supposed to be here
+		Menu.SetMenu('EndGameMenu');
+		let m = MessageBoxMenu(Menu.GetCurrentMenu());
+		if ( m ) m.HandleResult(true);
+		// special thanks to marrub for this absolute crime
+	}
+	override void RenderUnderlay( RenderEvent e )
+	{
+		Shader.SetUniform1f(players[consoleplayer],"undeathtitle1","timer",(level.maptime+e.FracTic)/GameTicRate-13.);
+		Shader.SetUniform1f(players[consoleplayer],"undeathtitle3","timer",(level.maptime+e.FracTic)/GameTicRate);
+		double alf = clamp(((level.maptime+e.FracTic)/GameTicRate)-1,0.,1.);
+		alf *= 1.-clamp(((level.maptime+e.FracTic)/GameTicRate)-6,0.,1.);
+		int ht = (bigfont.GetHeight()+2+smallfont.GetHeight())/2;
+		int yy = (Screen.GetHeight()-ht*CleanYFac_1)/2;
+		String str = StringTable.Localize("$TTL_PRESENTSA");
+		Screen.DrawText(bigfont,Font.CR_RED,(Screen.GetWidth()-bigfont.StringWidth(str)*CleanXFac_1)/2,yy,str,DTA_CleanNoMove_1,true,DTA_Alpha,alf);
+		str = StringTable.Localize("$TTL_PRESENTSB");
+		Screen.DrawText(smallfont,Font.CR_WHITE,(Screen.GetWidth()-smallfont.StringWidth(str)*CleanXFac_1)/2,yy+(bigfont.GetHeight()+2)*CleanYFac_1,str,DTA_CleanNoMove_1,true,DTA_Alpha,alf);
+		alf = clamp(((level.maptime+e.FracTic)/GameTicRate)-8,0.,1.);
+		alf *= 1.-clamp(((level.maptime+e.FracTic)/GameTicRate)-13,0.,1.);
+		str = StringTable.Localize("$TTL_GAMEBYA");
+		Screen.DrawText(smallfont,Font.CR_WHITE,(Screen.GetWidth()-smallfont.StringWidth(str)*CleanXFac_1)/2,yy,str,DTA_CleanNoMove_1,true,DTA_Alpha,alf);
+		str = StringTable.Localize("$TTL_GAMEBYB");
+		Screen.DrawText(bigfont,Font.CR_RED,(Screen.GetWidth()-bigfont.StringWidth(str)*CleanXFac_1)/2,yy+(smallfont.GetHeight()+2)*CleanYFac_1,str,DTA_CleanNoMove_1,true,DTA_Alpha,alf);
+		alf = clamp(((level.maptime+e.FracTic)/GameTicRate)-25,0.,3.)/3.;
+		if ( !logotex ) logotex = TexMan.CheckForTexture("graphics/unlogo.png",TexMan.Type_Any);
+		Vector2 vsize = TexMan.GetScaledSize(logotex);
+		Screen.DrawTexture(logotex,false,(Screen.GetWidth()-vsize.x*CleanXFac_1)/2,Screen.GetHeight()-vsize.y*CleanYFac_1,DTA_ScaleX,CleanXFac_1,DTA_ScaleY,CleanYFac_1,DTA_Alpha,alf);
+	}
+}

@@ -1,0 +1,7 @@
+HardwareShader PostProcess scene
+{
+	Name "undeathretro"
+	Shader "shaders/pp/UndeathRetro.fp" 330
+	Texture luttex "textures/undeathlut.png"
+	Uniform vec2 cleanres
+}

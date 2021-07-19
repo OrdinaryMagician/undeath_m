@@ -1,0 +1,30 @@
+// common definitions
+[default]
+T_UNPLAYERF = "Sada Eryanai";
+T_UNPLAYERM = "Zorou Sokana";
+T_UNPLAYERX = "Nyakko Oryusae";
+TTL_PRESENTSA = "UnSX Team";
+TTL_PRESENTSB = "presents";
+TTL_GAMEBYA = "a game by";
+TTL_GAMEBYB = "Marisa Kirisame";
+TTL_GAME = "UNDEATH";
+UN_CREED1 =
+"Let the beast know no mercy,\n"
+"for such a thing it does not comprehend.\n"
+"Let it taste pain, its blood pouring forth,\n"
+"for only death shall be their end.";
+UN_CREED2 =
+"Let no foul demon ever live,\n"
+"for such a thing it has no right.\n"
+"Let its very existence be undone,\n"
+"for upon this land it is a blight.";
+UN_CREED3 =
+"Let your blade guide the way,\n"
+"let your magic light the path.\n"
+"Let your gun strike the heart,\n"
+"let your hands rend them apart.";
+UN_CREED4 =
+"For the sins of them all,\n"
+"for the folly of their kind.\n"
+"May they all rue their traitorous act,\n"
+"may they regret taking our promised land.";

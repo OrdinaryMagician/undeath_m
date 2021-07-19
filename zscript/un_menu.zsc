@@ -1,0 +1,214 @@
+// UNDEATH menu code
+
+Class UnMessageBox : MessageBoxMenu
+{
+	override void Init( Menu parent, String message, int messagemode, bool playsound, Name cmd, voidptr native_handler )
+	{
+		Super.Init(parent,message,messagemode,playsound,cmd,native_handler);
+		destWidth = CleanWidth_1;
+		destHeight = CleanHeight_1;
+		mMessage = textfont.BreakLines(Stringtable.Localize(message),400);
+	}
+
+	override void Drawer()
+	{
+		int fontheight = textfont.GetHeight();
+		double y = destHeight/2;
+		int c = mMessage.Count();
+		int theight = 0;
+		for ( int i=0; i<c; i++ )
+		{
+			bool big = ((i==c-1)||(mMessage.StringWidth(i)==0))?false:true;
+			theight += big?bigfont.GetHeight():fontheight;
+		}
+		y -= theight/2;
+		for ( int i=0; i<c; i++ )
+		{
+			bool big = ((i==c-1)||(mMessage.StringWidth(i)==0))?false:true;
+			int w = big?bigfont.StringWidth(mMessage.StringAt(i)):mMessage.StringWidth(i);
+			Screen.DrawText(big?bigfont:textfont,OptionMenuSettings.mFontColorValue,(destWidth-w)/2,y,mMessage.StringAt(i),DTA_VirtualWidth,destWidth,DTA_VirtualHeight,destHeight,DTA_KeepRatio,true);
+			y += big?bigfont.GetHeight():fontheight;
+		}
+		if ( mMessageMode != 0 ) return;
+		y += 8;
+		mMouseY = int(y);
+		String stryes = Stringtable.Localize("$TXT_YES");
+		String strno = Stringtable.Localize("$TXT_NO");
+		Screen.DrawText(textfont,messageSelection==0?OptionMenuSettings.mFontColorSelection:OptionMenuSettings.mFontColor,(destWidth-textfont.StringWidth(stryes))/2,y,stryes, DTA_VirtualWidth,destWidth,DTA_VirtualHeight,destHeight,DTA_KeepRatio,true);
+		Screen.DrawText(textfont,messageSelection==1?OptionMenuSettings.mFontColorSelection:OptionMenuSettings.mFontColor,(destWidth-textfont.StringWidth(strno))/2,y+fontheight,strno,DTA_VirtualWidth,destWidth,DTA_VirtualHeight,destHeight,DTA_KeepRatio,true);
+		if ( (messageSelection < 0) || ((MenuTime()%8) >= 4) ) return;
+		Screen.DrawText(textfont,OptionMenuSettings.mFontColorSelection,(destWidth-textfont.StringWidth(messageSelection?strno:stryes))/2-15,y+fontheight*messageSelection,"›",DTA_VirtualWidth,destWidth,DTA_VirtualHeight,destHeight,DTA_KeepRatio,true);
+		Screen.DrawText(textfont,OptionMenuSettings.mFontColorSelection,(destWidth+textfont.StringWidth(messageSelection?strno:stryes))/2+8,y+fontheight*messageSelection,"‹",DTA_VirtualWidth,destWidth,DTA_VirtualHeight,destHeight,DTA_KeepRatio,true);
+	}
+
+	override bool MouseEvent( int type, int x, int y )
+	{
+		if ( mMessageMode == 1 )
+		{
+			if ( type == MOUSE_Click )
+				return MenuEvent(MKEY_Enter,true);
+			return false;
+		}
+		else
+		{
+			int sel = -1;
+			int fh = textfont.GetHeight();
+			// convert x/y from screen to virtual coordinates, according to CleanX/Yfac use in DrawTexture
+			x = x*destWidth/screen.GetWidth();
+			y = y*destHeight/screen.GetHeight();
+			if ( (y >= mMouseY) && (y < mMouseY+2*fh) )
+			{
+				sel = (y >= mMouseY+fh);
+				// are we actually selecting the text?
+				String txt = sel?Stringtable.Localize("$TXT_NO"):Stringtable.Localize("$TXT_YES");
+				int txtln = textfont.StringWidth(txt);
+				int minx = (destWidth-txtln);
+				if ( (x < (destWidth-txtln)) && (x > (destWidth+txtln)) )
+					sel = -1;
+			}
+			messageSelection = sel;
+			if ( type == MOUSE_Release ) return MenuEvent(MKEY_Enter,true);
+			return true;
+		}
+	}
+}
+
+Class UnConversationMenu : ConversationMenu
+{
+	// TODO
+}
+
+Class UnPlayerMenu : ListMenu
+{
+	// TODO
+}
+
+Class UnListMenu : ListMenu
+{
+	override bool MouseEvent( int type, int x, int y )
+	{
+		if ( mDesc.DisplayWidth() != ListMenuDescriptor.CleanScale )
+			return Super.MouseEvent(type,x,y);
+		int sel = -1;
+		double sx, sy;
+		// this menu uses the OTHER clean scale
+		x = ((x-(screen.GetWidth()/2))/CleanXfac_1)+160;
+		y = ((y-(screen.GetHeight()/2))/CleanYfac_1)+100;
+		if ( mFocusControl != NULL )
+		{
+			mFocusControl.MouseEvent(type,x,y);
+			return true;
+		}
+		else if ( ((mDesc.mWLeft <= 0) || (x > mDesc.mWLeft)) && ((mDesc.mWRight <= 0) || (x < mDesc.mWRight)) )
+		{
+			for( int i=0;i<mDesc.mItems.Size(); i++ )
+			{
+				if ( !mDesc.mItems[i].CheckCoordinate(x,y) )
+					continue;
+				mDesc.mSelectedItem = i;
+				mDesc.mItems[i].MouseEvent(type,x,y);
+				return true;
+			}
+		}
+		mDesc.mSelectedItem = -1;
+		return Menu.MouseEvent(type,x,y);
+	}
+}
+
+class ListMenuItemUnLogo : ListMenuItem
+{
+	TextureID mTexture;
+
+	void Init( ListMenuDescriptor desc )
+	{
+		Super.Init(desc.mXpos,desc.mYpos);
+		mTexture = TexMan.CheckForTexture("graphics/M_UNDEATH.png",TexMan.Type_Any);
+	}
+
+	override void Draw( bool selected, ListMenuDescriptor desc )
+	{
+		if ( !mTexture.Exists() )
+			return;
+		int w = desc?desc.DisplayWidth():ListMenuDescriptor.CleanScale;
+		int h = desc?desc.DisplayHeight():-1;
+		Vector2 vs = TexMan.GetScaledSize(mTexture);
+		double x;
+		if ( w == ListMenuDescriptor.CleanScale )
+		{
+			x = (320-vs.x)/2;
+			x = (x-160)*CleanXFac_1+(Screen.GetWidth()*.5);
+			double y = -16;
+			y = (y-100)*CleanYFac_1+(Screen.GetHeight()*.5);
+			Screen.DrawTexture(mTexture,false,x,y,DTA_ScaleX,CleanXFac_1,DTA_ScaleY,CleanYFac_1);
+		}
+		else
+		{
+			x = (w-vs.x)/2;
+			Screen.DrawTexture(mTexture,false,x,-16,DTA_VirtualWidth,w,DTA_VirtualHeight,h,DTA_FullscreenScale,FSMode_ScaleToFit43);
+		}
+	}
+}
+
+Class ListMenuItemUnTextItemM : ListMenuItemSelectable
+{
+	String mText;
+	Font mFont;
+	int mColor;
+	int mColorSelected;
+	bool isselected;
+	double selfade;
+
+	void Init( ListMenuDescriptor desc, String text, String hotkey, Name child, int param = 0 )
+	{
+		Super.Init(desc.mXpos,desc.mYpos,desc.mLinespacing,child,param);
+		mText = text;
+		mFont = desc.mFont;
+		mColor = desc.mFontColor;
+		mColorSelected = desc.mFontcolor2;
+		mHotkey = hotkey.GetNextCodePoint(0);
+	}
+
+	void InitDirect( double x, double y, int height, int hotkey, String text, Font font, int color, int color2, Name child, int param = 0 )
+	{
+		Super.Init(x,y,height,child,param);
+		mText = text;
+		mFont = font;
+		mColor = color;
+		mColorSelected = color2;
+		mHotkey = hotkey;
+	}
+
+	override void Ticker()
+	{
+		Super.Ticker();
+		if ( isselected ) selfade = min(1.,selfade+5./GameTicRate);
+		else selfade = max(0.,selfade-3./GameTicRate);
+	}
+
+	override void Draw( bool selected, ListMenuDescriptor desc )
+	{
+		isselected = selected;
+		int w = desc?desc.DisplayWidth():ListMenuDescriptor.CleanScale;
+		int h = desc?desc.DisplayHeight():-1;
+		String text = StringTable.Localize(mText);
+		double x;
+		// centered
+		if ( w == ListMenuDescriptor.CleanScale ) x = (320-mFont.StringWidth(text))/2;
+		else x = (w-mFont.StringWidth(text))/2;
+		double y = mYPos;
+		if ( w == ListMenuDescriptor.CleanScale )
+		{
+			x = (x-160)*CleanXFac_1+(Screen.GetWidth()*.5);
+			y = (y-100)*CleanYFac_1+(Screen.GetHeight()*.5);
+			Screen.DrawText(mFont,mColor,x,y,text,DTA_CleanNoMove_1,true,DTA_Alpha,1.-selfade);
+			UnUtility.StripColor(text);	// full tint when selected, ignore color tags
+			Screen.DrawText(mFont,mColorSelected,x,y,text,DTA_CleanNoMove_1,true,DTA_Alpha,selfade);
+		}
+		else
+		{
+			Screen.DrawText(mFont,mColor,x,y,text,DTA_VirtualWidth,w,DTA_VirtualHeight,h,DTA_FullscreenScale,FSMode_ScaleToFit43,DTA_Alpha,1.-selfade);
+			UnUtility.StripColor(text);	// full tint when selected, ignore color tags
+			Screen.DrawText(mFont,mColorSelected,x,y,text,DTA_VirtualWidth,w,DTA_VirtualHeight,h,DTA_FullscreenScale,FSMode_ScaleToFit43,DTA_Alpha,selfade);
+		}
+	}
+}

@@ -1,12 +1,6 @@
-# UNDEATH
+# ![UNDEATH](docimg/unlogo.png)
 
-#### Let the beast know no mercy,<br/>for such a thing it does not comprehend.<br/>Let it taste pain, its blood pouring forth,<br/>for only death shall be their end.
-
-#### Let no foul demon ever live,<br/>for such a thing it has no right.<br/>Let its very existence be undone,<br/>for upon this land it is a blight.
-
-#### Let your blade guide your way,<br/>let your magic light your path.<br/>Let your gun strike the heart,<br/>let your hands rend them apart.
-
-#### For the sins of them all,<br/>for the folly of their kind.<br/>May they all rue their traitorous act,<br/>may they regret taking our promised land.
+#### ![Veryakhai Creed](docimg/uncreed.png)
 
 ---
 
@@ -30,7 +24,7 @@ Your objective, warrior, is to end the lives of each and every one of them.
 
 ## The Characters
 
-There are a number of characters you can choose at the start of a new game, each with different specialties and stats.
+There are a number of characters you can choose at the start of a new game, each with different specialties and stats. Whichever you choose of each group to play as, the others will become NPCs you can interact with throughout the game.
 
 ### Disciples of Veryakhai
 
@@ -83,6 +77,22 @@ The body of the undying requires blood to heal itself, blood brimming with iron 
 Of course, you can keep yourself healthy by eating and drinking when needed, but there are also other methods by which you can enrich your blood, one of them being the valuable, but rare **Akashna Extract**: A nutritious beverage concocted with the fresh blood of a healthy **Akashna**. Do note however that the very thick stench of blood may attract unwanted attention when opened.
 
 Thinning of the blood, if untreated, will eventually result in the inability to regenerate, meaning you will no longer be able to fight, and your body will remain dead. In this case, not all is truly lost, as your immortal soul can force the body to scatter, allowing it to reform in a safer place.
+
+### The Hub
+
+Your missions will take you all around various locales within Hell, but there will always be one central hub where you can take a break, have a chat with your comrades, trade goods, have lunch, enjoy a bath together, get some sleep...
+
+While this safe haven may seem a bit small with just you and your squad around, do keep in mind that sometimes certain individuals you encounter throughout your adventures may stop by for a visit. Some might even stay and help around, set up shop, and so on. Despite the current forces in power, it's not like the civilian population rejects your kind.
+
+### Missions
+
+Most of your assassination jobs can be tackled in any order. In some cases, a bit of surveying ahead of time might also be helpful. Each character has set targets according to their needed skills. While you focus on your job, your companions will definitely deal with their own targets by themselves, given time.
+
+Some side missions might also open up by request of certain people you'll come across. These side missions can be handled by any character, and offer some juicy rewards that might prove useful along the way. Nevertheless, they are optional, so you can freely choose whether or not to do them.
+
+### Bonding
+
+Spending time with your companions is always a nice thing. Not only can you hang out with them in the hub, but you can also ask them to come along with you for your missions, should you find yourself shorthanded. Having friends around also allows you to share items. Just remember one thing: They also need the stuff, don't be greedy.
 
 ### . . .
 
