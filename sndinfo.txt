@@ -1,0 +1,10 @@
+// menu sounds, based on .blank prototype
+menu/activate			"sounds/umenu1.ogg"	// Activate a new menu
+menu/backup			"sounds/umenu2.ogg"	// Backup to previous menu
+menu/prompt			"sounds/umenu1.ogg"	// Activate a prompt "menu"
+menu/cursor			"sounds/umenu1.ogg"	// Move cursor up/down
+menu/change			"sounds/umenu3.ogg"	// Select new value for option
+menu/invalid			"sounds/umenu3.ogg"	// Menu not available
+menu/dismiss			"sounds/umenu2.ogg"	// Dismiss a prompt message
+menu/choose			"sounds/umenu1.ogg"	// Choose a menu item
+menu/clear			"sounds/umenu2.ogg"	// Close top menu
