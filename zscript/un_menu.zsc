@@ -115,13 +115,15 @@ Class UnListMenu : ListMenu
 	}
 }
 
-class ListMenuItemUnLogo : ListMenuItem
+Class ListMenuItemUnLogo : ListMenuItem
 {
 	TextureID mTexture;
+	int ypos;
 
-	void Init( ListMenuDescriptor desc )
+	void Init( ListMenuDescriptor desc, int ypos )
 	{
 		Super.Init(desc.mXpos,desc.mYpos);
+		self.ypos = ypos;
 		mTexture = TexMan.CheckForTexture("graphics/M_UNDEATH.png",TexMan.Type_Any);
 	}
 
@@ -137,14 +139,14 @@ class ListMenuItemUnLogo : ListMenuItem
 		{
 			x = (320-vs.x)/2;
 			x = (x-160)*CleanXFac_1+(Screen.GetWidth()*.5);
-			double y = -16;
+			double y = ypos;
 			y = (y-100)*CleanYFac_1+(Screen.GetHeight()*.5);
 			Screen.DrawTexture(mTexture,false,x,y,DTA_ScaleX,CleanXFac_1,DTA_ScaleY,CleanYFac_1);
 		}
 		else
 		{
 			x = (w-vs.x)/2;
-			Screen.DrawTexture(mTexture,false,x,-16,DTA_VirtualWidth,w,DTA_VirtualHeight,h,DTA_FullscreenScale,FSMode_ScaleToFit43);
+			Screen.DrawTexture(mTexture,false,x,ypos,DTA_VirtualWidth,w,DTA_VirtualHeight,h,DTA_FullscreenScale,FSMode_ScaleToFit43);
 		}
 	}
 }

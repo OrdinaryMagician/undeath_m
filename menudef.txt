@@ -4,8 +4,8 @@ ListMenu "MainMenu"
 	Size Clean
 	Font "BigFont", "White", "Red"
 	LineSpacing 40
-	Position 0, 40
-	UnLogo
+	Position 0, 4
+	UnLogo -56
 	UnTextItemM "$MNU_NEWGAME", "n", "PlayerclassMenu"
 	UnTextItemM "$MNU_LOADGAME", "l", "LoadGameMenu"
 	UnTextItemM "$MNU_SAVEGAME", "s", "SaveGameMenu"
@@ -19,8 +19,8 @@ ListMenu "MainMenuTextOnly"
 	Size Clean
 	Font "BigFont", "White", "Red"
 	LineSpacing 40
-	Position 0, 40
-	UnLogo
+	Position 0, 4
+	UnLogo -56
 	UnTextItemM "$MNU_NEWGAME", "n", "PlayerclassMenu"
 	UnTextItemM "$MNU_LOADGAME", "l", "LoadGameMenu"
 	UnTextItemM "$MNU_SAVEGAME", "s", "SaveGameMenu"
@@ -34,7 +34,7 @@ ListMenu "PlayerclassMenu"
 	Size Clean
 	Font "BigFont", "White", "Red"
 	LineSpacing 40
-	Position 0, 40
+	Position 0, 4
 	NetgameMessage "$NEWGAME"
 	// whole damn thing is populated by scripting anyway
 }

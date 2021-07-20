@@ -7,7 +7,7 @@ GameInfo
 	ForceTextInMenus = true
 	TelefogHeight = 28
 	DimColor = "Black"
-	DimAmount = 0.5
+	DimAmount = 0.25
 	Endoom = "ENDDEATH"
 	PickupColor = "White"
 	QuitMessages = "$QUITMSG"
