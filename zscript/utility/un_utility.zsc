@@ -63,6 +63,13 @@ Class UnUtility
 			&& (vpos.y == clamp(vpos.y,d.viewy,d.viewy+d.viewh)));
 	}
 
+	// less code duplication
+	static void AdjustClean_1( out double x, out double y )
+	{
+		x = (x-160)*CleanXFac_1+(Screen.GetWidth()*.5);
+		y = (y-100)*CleanYFac_1+(Screen.GetHeight()*.5);
+	}
+
 	// thanks zscript
 	static clearscope double fract( double a )
 	{

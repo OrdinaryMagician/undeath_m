@@ -25,6 +25,8 @@ Class UnTitleHandler : EventHandler
 	}
 	override void RenderUnderlay( RenderEvent e )
 	{
+		if ( level.maptime < (10.*GameTicRate) )
+			Screen.Dim("Black",1.-(level.maptime+e.FracTic)/(10.*GameTicRate),0,0,Screen.GetWidth(),Screen.GetHeight());
 		Shader.SetUniform1f(players[consoleplayer],"undeathtitle1","timer",(level.maptime+e.FracTic)/GameTicRate-13.);
 		Shader.SetUniform1f(players[consoleplayer],"undeathtitle3","timer",(level.maptime+e.FracTic)/GameTicRate);
 		double alf = clamp(((level.maptime+e.FracTic)/GameTicRate)-1,0.,1.);

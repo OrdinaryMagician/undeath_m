@@ -33,8 +33,11 @@ ListMenu "PlayerclassMenu"
 	Class "UnPlayerMenu"
 	Size Clean
 	Font "BigFont", "White", "Red"
-	LineSpacing 40
-	Position 0, 4
+	// dummy values since the custom menu class just ignores these
+	// (plus having them this way easily prevents gzdoom from turning this
+	// into an ugly option menu if there are too many classes)
+	LineSpacing 0
+	Position 0, 0
 	NetgameMessage "$NEWGAME"
 	// whole damn thing is populated by scripting anyway
 }

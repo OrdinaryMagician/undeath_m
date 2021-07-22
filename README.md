@@ -6,7 +6,7 @@
 
 ## So... What is this even supposed to be?
 
-**UNDEATH** is a standalone title for **GZDoom** where you take on the role of a lone warrior of the **Anarukon** people, tasked with the mission of slaying the demon hordes of **Hell**.
+**UNDEATH** is a standalone title for **GZDoom** where you take on the role of a warrior of the **Anarukon** people, tasked with the mission of slaying the demon hordes of **Hell**.
 
 Endless, immortal... For you death is merely a temporary setback, so as you can imagine, you really can't lose... Or can you?
 
@@ -32,13 +32,19 @@ Three brave warriors, bonded by their many adventures together. All trained unde
 
 #### Sada Eryanai
 
+![portrait](docimg/sada.png)
+
 Specialized in melee combat, she knows how to most efficiently employ the strongest of bladed weapons. Her skills with magic are focused on pyromancy. Due to her large stature, she may have trouble moving around, but this is complemented with much heftier resistances, basically making her the tank option.
 
 #### Zorou Sokana
 
+![portrait](docimg/zorou.png)
+
 Specialized in firearm combat, he's quite an expert with all sorts of guns, including some not of **Anarukon** manufacture. Certainly, he may be able to employ some rather unconventional weaponry too, if he's lucky enough to find some. His magic abilities are mostly focused on restoration and defensive spells. Out of all three he's the swiftest, but he's not very good with close combat.
 
 #### Nyakko Oryusae
+
+![portrait](docimg/nyakko.png)
 
 Specialized in magic, they are well-versed in many different schools, allowing them to perform some of the most powerful spells known. From all forms of elemental magic, to even harnessing time manipulation, nothing escapes them. They're the weakest physically, but this is compensated by a much larger mana pool. Their small frame allows for better mobility, too, but limits the kinds of conventional weapons they may be able to use.
 

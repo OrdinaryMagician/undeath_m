@@ -6,3 +6,78 @@ MNU_OPTIONS = "Options";
 MNU_INFO = "Help";
 MNU_QUITGAME = "Quit";
 QUITMSG = "\cjMay your rest be plentiful,\nfor the next battle awaits.\c-";
+MNU_CHOOSECLASS = "Choose your character:";
+// not used yet
+PF_SADA =
+"\cgDOB:\c- 2094-05-07 (age 71)\n"
+"\cgGender:\c- Female\n"
+"\cgHeight:\c- 205cm\n"
+"\cgWeight:\c- 127kg\n"
+"\cgClass:\c- Fighter\n"
+"\n"
+"\cgTraits:\c-\n"
+" \cd+\c- Strength focus\n"
+" \cd+\c- Pyromantic affinity\n"
+" \cd+\c- Vigorous\n"
+" \cg-\c- Sluggish";
+PF_ZOROU =
+"\cgDOB:\c- 2097-04-12 (age 68)\n"
+"\cgGender:\c- Male\n"
+"\cgHeight:\c- 166cm\n"
+"\cgWeight:\c- 57kg\n"
+"\cgClass:\c- Ranger\n"
+"\n"
+"\cgTraits:\c-\n"
+" \cd+\c- Dexterity focus\n"
+" \cd+\c- Firearm affinity\n"
+" \cd+\c- Stealthy\n"
+" \cg-\c- Weak melee";
+PF_NYAKKO =
+"\cgDOB:\c- 2086-06-19 (age 79)\n"
+"\cgGender:\c- Non-binary (he/they)\n"
+"\cgHeight:\c- 155cm\n"
+"\cgWeight:\c- 43kg\n"
+"\cgClass:\c- Sorcerer\n"
+"\n"
+"\cgTraits:\c-\n"
+" \cd+\c- Arcane focus\n"
+" \cd+\c- Brimming mana\n"
+" \cd+\c- Agile\n"
+" \cg-\c- Glass cannon";
+ST_SADA =
+"\cgWeapons:\c-\n"
+" · Pronoxyte Claymore\n"
+" · Nelaka Xei Personal Sidearm\n"
+"\n"
+"\cgSpells:\c-\n"
+" · Ember Flash\n"
+" · Eruption\n"
+" · Stone Skin\n"
+" · Red Sun\n"
+" · Inferno Whirl";
+ST_ZOROU =
+"\cgWeapons:\c-\n"
+" · Sokana Long Auto-Rifle\n"
+" · 2x Pronoxyte Dagger\n"
+"\n"
+"\cgSpells:\c-\n"
+" · Heal\n"
+" · Cure Poison\n"
+" · Barrier\n"
+" · Grand Cross\n"
+" · Retribution";
+ST_NYAKKO =
+"\cgWeapons:\c-\n"
+" · N/A\n"
+"\n"
+"Spells:\n"
+" · God Slash\n"
+" · Dark Entanglement\n"
+" · Damnation\n"
+" · Unearthed Magic\n"
+" · Master Flare\n"
+" · Monarch's Wrath\n"
+" · Chronic Halt";
+BIO_SADA = "Born 2094 in Kora, Akkou, as the older of two siblings. Sada spent most of her younger days training to help her family with farming. At the age of 20, however, she met a certain man, a mercenary. She was impressed by the massive sword he wielded, and his dexterity with such a weapon. The two would spend some time together, but eventually had to part ways. It was then that she decided to have a change of career, enrolling under the apprenticeship of Nussana Veryakhai. There, she also met Zoryun and Nyakko, and the three would quickly become inseparable friends, and over time, grew much closer too, sharing a deep bond with each other. Now, it is time for her to prove her strength, and cleave her way through the hordes of Hell with the mightiest of blades.";
+BIO_ZOROU = "Born in 2097 in Maria, Kurukurunishe, as a single child to a couple of gunsmiths. Zorou took to the family business at a young age, learning the ins and outs of Anarukon firearms. Soon enough, with the knowledge he had gained, he tried his luck advertising original concepts to the famed Nelaka Arms Company, but he was rejected. With his dreams so easily crushed, he descended into a seemingly inescapable depression. Then, one day, a revelation came: If he couldn't sell his weapons, why not put them to use? It seemed that rangers were on high demand in the Sykhai Empire, and there was a famous warrior in the land that could train him. The rest of this tale, as one would expect, would drive him to meet Sada and Nyakko, the three becoming an exceptional team. Now, it is time for him to prove his strength, and strike at the very heart of evil with the very instruments of war he has poured all his love into.";
+BIO_NYAKKO = "Born in 2086 in Chiba, Japan, as the sole child to an Esper father and Anarukon mother. Nyakko's lifetime aspiration was to become an all-powerful witch. This eventually led them to Sankaideriha, where they studied under grandmaster Ikuya Kaou. There, the innate bond with chronomancy that their esper blood carried would shine. Of course, they also took to many other schools, being especially fond of anything that exploded. Upon graduating as a mage, they were directed to other experts for further learning. One of those was listed as a \"personal defense\" trainer: Nussana Veryakhai, of Akkou. Knowing full well that spellcasting wasn't solely a \"fire and forget\" matter, they chose to study under her. In the process, they would meet two wonderful friends, Sada and Zorou, who have forever remained by their side since then. Now, it is time for them to prove their strength, and wash away the Demonic plague with the unmatched power she has harnessed.";

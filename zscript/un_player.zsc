@@ -2,6 +2,12 @@
 
 Class UnPlayer : PlayerPawn
 {
+	meta String Profile;
+	meta String Stats;
+
+	Property Profile: Profile;
+	Property Stats: Stats;
+
 	Default
 	{
 		+NOMENU;
@@ -16,6 +22,8 @@ Class UnPlayerF : UnPlayer
 		Player.SoundClass "snd_sada";
 		Player.DisplayName "$T_UNPLAYERF";
 		Player.Portrait "graphics/portraits/pt_sada.png";
+		UnPlayer.Profile "$PF_SADA";
+		UnPlayer.Stats "$ST_SADA";
 		-NOMENU;
 	}
 }
@@ -27,6 +35,8 @@ Class UnPlayerM : UnPlayer
 		Player.SoundClass "snd_zorou";
 		Player.DisplayName "$T_UNPLAYERM";
 		Player.Portrait "graphics/portraits/pt_zorou.png";
+		UnPlayer.Profile "$PF_ZOROU";
+		UnPlayer.Stats "$ST_ZOROU";
 		-NOMENU;
 	}
 }
@@ -38,6 +48,8 @@ Class UnPlayerX : UnPlayer
 		Player.SoundClass "snd_nyakko";
 		Player.DisplayName "$T_UNPLAYERX";
 		Player.Portrait "graphics/portraits/pt_nyakko.png";
+		UnPlayer.Profile "$PF_NYAKKO";
+		UnPlayer.Stats "$ST_NYAKKO";
 		-NOMENU;
 	}
 }

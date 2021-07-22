@@ -80,7 +80,132 @@ Class UnConversationMenu : ConversationMenu
 
 Class UnPlayerMenu : ListMenu
 {
-	// TODO
+	const HEADERY = -100.;
+	const NAMEY = 244.;
+	const BASEOFS = 120.;
+
+	Array<TextureID> portraits;
+	double fact, fact2;
+	int prev;
+
+	override void Init( Menu parent, ListMenuDescriptor desc )
+	{
+		Super.Init(parent,desc);
+		portraits.Resize(PlayerClasses.Size());
+		for ( int i=0; i<mDesc.mItems.Size(); i++ )
+		{
+			Name act;
+			int param;
+			[act, param] = mDesc.mItems[i].GetAction();
+			if ( (act != 'EpisodeMenu') || (param < 0) || (param >= PlayerClasses.Size()) )
+				continue;
+			let def = GetDefaultByType((Class<PlayerPawn>)(PlayerClasses[param].type));
+			portraits[param] = TexMan.CheckForTexture(def.Portrait,TexMan.Type_Any);
+		}
+	}
+
+	override bool MenuEvent( int mkey, bool fromcontroller )
+	{
+		prev = mDesc.mSelectedItem;
+		switch ( mkey )
+		{
+		case MKEY_Left:
+			if ( mDesc.mSelectedItem > 0 )
+			{
+				mDesc.mSelectedItem--;
+				MenuSound("menu/cursor");
+				fact -= 1.;
+				fact2 = 1.;
+			}
+			return true;
+		case MKEY_Right:
+			if ( mDesc.mSelectedItem < mDesc.mItems.Size()-1 )
+			{
+				mDesc.mSelectedItem++;
+				MenuSound("menu/cursor");
+				fact += 1.;
+				fact2 = -1.;
+			}
+			return true;
+		case MKEY_Enter:
+			if ( (mDesc.mSelectedItem >= 0) && mDesc.mItems[mDesc.mSelectedItem].Activate() )
+				MenuSound("menu/advance");
+			return true;
+		}
+		return Menu.MenuEvent(mkey, fromcontroller);
+	}
+
+	override bool MouseEvent( int type, int x, int y )
+	{
+		// TODO
+		return Menu.MouseEvent(type,x,y);
+	}
+
+	override void Ticker()
+	{
+		double theta = 8./GameTicRate;
+		fact = fact*(1.-theta);
+		fact2 = fact2*(1.-theta);
+	}
+
+	private void DrawProfile( int idx, double offset )
+	{
+		let ci = mDesc.mItems[idx];
+		Name act;
+		Int param;
+		[act, param] = ci.GetAction();
+		if ( (param < 0) || (param > portraits.Size()) ) return;
+		double alpha = max(0.,1.-(abs(offset)/CleanWidth_1)*3);
+		int sat = min(255,int((abs(offset)/CleanWidth_1)*4*255));
+		double x = 160+offset;
+		double y = 100;
+		UnUtility.AdjustClean_1(x,y);
+		Screen.DrawTexture(portraits[param],false,x+offset,y,DTA_ScaleX,CleanXFac_1*.15,DTA_ScaleY,CleanYFac_1*.15,DTA_Alpha,alpha,DTA_Desaturate,sat);
+	}
+
+	override void Drawer()
+	{
+		String str = StringTable.Localize("$MNU_CHOOSECLASS");
+		double x = (320-BigFont.StringWidth(str))/2;
+		double y = HEADERY;
+		UnUtility.AdjustClean_1(x,y);
+		Screen.DrawText(BigFont,Font.CR_RED,x,y,str,DTA_ScaleX,CleanXFac_1,DTA_ScaleY,CleanYFac_1);
+		if ( mDesc.mSelectedItem == -1 )
+		{
+			Menu.Drawer();
+			return;
+		}
+		let ci = mDesc.mItems[mDesc.mSelectedItem];
+		if ( ci is 'ListMenuItemTextItem' )
+		{
+			str = StringTable.Localize(ListMenuItemTextItem(ci).mText);
+			x = (320-BigFont.StringWidth(str))/2;
+			y = NAMEY;
+			UnUtility.AdjustClean_1(x,y);
+			Screen.DrawText(BigFont,Font.CR_RED,x-BASEOFS*CleanXFac_1*fact2,y,str,DTA_ScaleX,CleanXFac_1,DTA_ScaleY,CleanYFac_1,DTA_Alpha,1.-abs(fact2));
+		}
+		if ( fact2 != 0. )
+		{
+			let pi = mDesc.mItems[prev];
+			if ( pi is 'ListMenuItemTextItem' )
+			{
+				str = StringTable.Localize(ListMenuItemTextItem(pi).mText);
+				x = (320-BigFont.StringWidth(str))/2;
+				y = NAMEY;
+				UnUtility.AdjustClean_1(x,y);
+				double invfact2 = (fact2>0)?(1.-fact2):-(1.-abs(fact2));
+				Screen.DrawText(BigFont,Font.CR_WHITE,x+BASEOFS*CleanXFac_1*invfact2,y,str,DTA_ScaleX,CleanXFac_1,DTA_ScaleY,CleanYFac_1,DTA_Alpha,abs(fact2));
+			}
+		}
+		double ofs = (fact-mDesc.mSelectedItem)*BASEOFS;
+		for ( int i=0; i<mDesc.mItems.Size(); i++, ofs += BASEOFS )
+		{
+			if ( ofs < -CleanWidth_1/2 ) continue;
+			if ( ofs > CleanWidth_1/2 ) continue;
+			DrawProfile(i,ofs);
+		}
+		Menu.Drawer();
+	}
 }
 
 Class UnListMenu : ListMenu
