@@ -69,6 +69,10 @@ Class UnUtility
 		x = (x-160)*CleanXFac_1+(Screen.GetWidth()*.5);
 		y = (y-100)*CleanYFac_1+(Screen.GetHeight()*.5);
 	}
+	static void AdjustClean_1x( out double x )
+	{
+		x = (x-160)*CleanXFac_1+(Screen.GetWidth()*.5);
+	}
 
 	// thanks zscript
 	static clearscope double fract( double a )

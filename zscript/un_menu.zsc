@@ -81,12 +81,13 @@ Class UnConversationMenu : ConversationMenu
 Class UnPlayerMenu : ListMenu
 {
 	const HEADERY = -100.;
-	const NAMEY = 244.;
-	const BASEOFS = 120.;
+	const NAMEY = 240.;
+	const BASEOFS = 180.;
 
 	Array<TextureID> portraits;
 	double fact, fact2;
 	int prev;
+	transient uint prevms;
 
 	override void Init( Menu parent, ListMenuDescriptor desc )
 	{
@@ -102,6 +103,7 @@ Class UnPlayerMenu : ListMenu
 			let def = GetDefaultByType((Class<PlayerPawn>)(PlayerClasses[param].type));
 			portraits[param] = TexMan.CheckForTexture(def.Portrait,TexMan.Type_Any);
 		}
+		prevms = MSTime();
 	}
 
 	override bool MenuEvent( int mkey, bool fromcontroller )
@@ -137,15 +139,34 @@ Class UnPlayerMenu : ListMenu
 
 	override bool MouseEvent( int type, int x, int y )
 	{
-		// TODO
+		int sel = -1;
+		// adjust to clean_1 scale
+		x = ((x-(Screen.GetWidth()/2))/CleanXFac_1)+160;
+		y = ((y-(Screen.GetHeight()/2))/CleanYFac_1)+100;
+		if ( mFocusControl != NULL )
+		{
+			mFocusControl.MouseEvent(type,x,y);
+			return true;
+		}
+		else if ( (y > HEADERY+BigFont.GetHeight()) && (y < NAMEY+BigFont.GetHeight()) )
+		{
+			double ofs = 160-BASEOFS*mDesc.mSelectedItem;
+			for ( int i=0; i<mDesc.mItems.Size(); i++, ofs += BASEOFS )
+			{
+				if ( (x < (ofs-BASEOFS/2)) || (x > (ofs+BASEOFS/2)) )
+					continue;
+				if ( i == mDesc.mSelectedItem ) mDesc.mItems[i].MouseEvent(type,x,y);
+				else if ( type == Menu.MOUSE_Release )
+				{
+					MenuSound("menu/cursor");
+					fact = i-mDesc.mSelectedItem;
+					fact2 = (i>mDesc.mSelectedItem)?-1:1;
+					mDesc.mSelectedItem = i;
+				}
+				return true;
+			}
+		}
 		return Menu.MouseEvent(type,x,y);
-	}
-
-	override void Ticker()
-	{
-		double theta = 8./GameTicRate;
-		fact = fact*(1.-theta);
-		fact2 = fact2*(1.-theta);
 	}
 
 	private void DrawProfile( int idx, double offset )
@@ -154,17 +175,24 @@ Class UnPlayerMenu : ListMenu
 		Name act;
 		Int param;
 		[act, param] = ci.GetAction();
-		if ( (param < 0) || (param > portraits.Size()) ) return;
-		double alpha = max(0.,1.-(abs(offset)/CleanWidth_1)*3);
-		int sat = min(255,int((abs(offset)/CleanWidth_1)*4*255));
+		if ( (param < 0) || (param >= portraits.Size()) ) return;
+		double alpha = max(0.,1.-(abs(offset)/CleanWidth_1)*2);
+		int sat = min(255,int((abs(offset)/CleanWidth_1)*3*255));
 		double x = 160+offset;
-		double y = 100;
+		double y = 85;
 		UnUtility.AdjustClean_1(x,y);
-		Screen.DrawTexture(portraits[param],false,x+offset,y,DTA_ScaleX,CleanXFac_1*.15,DTA_ScaleY,CleanYFac_1*.15,DTA_Alpha,alpha,DTA_Desaturate,sat);
+		Screen.DrawTexture(portraits[param],false,x,y,DTA_ScaleX,CleanXFac_1*.125,DTA_ScaleY,CleanYFac_1*.125,DTA_Alpha,alpha,DTA_Desaturate,sat);
 	}
 
 	override void Drawer()
 	{
+		if ( prevms )
+		{
+			double frametime = (MSTime()-prevms)/1000.;
+			double theta = clamp(8.*frametime,0.,1.); // naive, but whatever
+			fact = fact*(1.-theta);
+			fact2 = fact2*(1.-theta);
+		}
 		String str = StringTable.Localize("$MNU_CHOOSECLASS");
 		double x = (320-BigFont.StringWidth(str))/2;
 		double y = HEADERY;
@@ -173,6 +201,7 @@ Class UnPlayerMenu : ListMenu
 		if ( mDesc.mSelectedItem == -1 )
 		{
 			Menu.Drawer();
+			prevms = MSTime();
 			return;
 		}
 		let ci = mDesc.mItems[mDesc.mSelectedItem];
@@ -183,6 +212,18 @@ Class UnPlayerMenu : ListMenu
 			y = NAMEY;
 			UnUtility.AdjustClean_1(x,y);
 			Screen.DrawText(BigFont,Font.CR_RED,x-BASEOFS*CleanXFac_1*fact2,y,str,DTA_ScaleX,CleanXFac_1,DTA_ScaleY,CleanYFac_1,DTA_Alpha,1.-abs(fact2));
+			// draw class if any
+			Name act;
+			Int param;
+			[act, param] = ci.GetAction();
+			if ( (param >= 0) && (param < portraits.Size()) )
+			{
+				str = StringTable.Localize("$CLS_"..PlayerClasses[param].type.GetClassName());
+				x = (320-SmallFont.StringWidth(str))/2;
+				y = NAMEY-SmallFont.GetHeight()+6;
+				UnUtility.AdjustClean_1(x,y);
+				Screen.DrawText(SmallFont,Font.CR_WHITE,x-BASEOFS*CleanXFac_1*fact2,y,str,DTA_ScaleX,CleanXFac_1,DTA_ScaleY,CleanYFac_1,DTA_Alpha,1.-abs(fact2));
+			}
 		}
 		if ( fact2 != 0. )
 		{
@@ -194,17 +235,43 @@ Class UnPlayerMenu : ListMenu
 				y = NAMEY;
 				UnUtility.AdjustClean_1(x,y);
 				double invfact2 = (fact2>0)?(1.-fact2):-(1.-abs(fact2));
-				Screen.DrawText(BigFont,Font.CR_WHITE,x+BASEOFS*CleanXFac_1*invfact2,y,str,DTA_ScaleX,CleanXFac_1,DTA_ScaleY,CleanYFac_1,DTA_Alpha,abs(fact2));
+				Screen.DrawText(BigFont,Font.CR_DARKRED,x+BASEOFS*CleanXFac_1*invfact2,y,str,DTA_ScaleX,CleanXFac_1,DTA_ScaleY,CleanYFac_1,DTA_Alpha,abs(fact2));
+				// draw class if any
+				Name act;
+				Int param;
+				[act, param] = pi.GetAction();
+				if ( (param >= 0) && (param < portraits.Size()) )
+				{
+					str = StringTable.Localize("$CLS_"..PlayerClasses[param].type.GetClassName());
+					x = (320-SmallFont.StringWidth(str))/2;
+					y = NAMEY-SmallFont.GetHeight()+6;
+					UnUtility.AdjustClean_1(x,y);
+					Screen.DrawText(SmallFont,Font.CR_DARKGRAY,x+BASEOFS*CleanXFac_1*invfact2,y,str,DTA_ScaleX,CleanXFac_1,DTA_ScaleY,CleanYFac_1,DTA_Alpha,abs(fact2));
+				}
 			}
 		}
-		double ofs = (fact-mDesc.mSelectedItem)*BASEOFS;
-		for ( int i=0; i<mDesc.mItems.Size(); i++, ofs += BASEOFS )
+		// draw spread out from current item, so closer items to center are layered on top
+		double ofs = fact*BASEOFS;
+		DrawProfile(mDesc.mSelectedItem,ofs);
+		// left
+		for ( int i=mDesc.mSelectedItem-1; i>=0; i-- )
 		{
+			ofs -= BASEOFS;
+			if ( ofs < -CleanWidth_1/2 ) continue;
+			if ( ofs > CleanWidth_1/2 ) continue;
+			DrawProfile(i,ofs);
+		}
+		// right
+		ofs = fact*BASEOFS;
+		for ( int i=mDesc.mSelectedItem+1; i<mDesc.mItems.Size(); i++ )
+		{
+			ofs += BASEOFS;
 			if ( ofs < -CleanWidth_1/2 ) continue;
 			if ( ofs > CleanWidth_1/2 ) continue;
 			DrawProfile(i,ofs);
 		}
 		Menu.Drawer();
+		prevms = MSTime();
 	}
 }
 
@@ -263,9 +330,8 @@ Class ListMenuItemUnLogo : ListMenuItem
 		if ( w == ListMenuDescriptor.CleanScale )
 		{
 			x = (320-vs.x)/2;
-			x = (x-160)*CleanXFac_1+(Screen.GetWidth()*.5);
 			double y = ypos;
-			y = (y-100)*CleanYFac_1+(Screen.GetHeight()*.5);
+			UnUtility.AdjustClean_1(x,y);
 			Screen.DrawTexture(mTexture,false,x,y,DTA_ScaleX,CleanXFac_1,DTA_ScaleY,CleanYFac_1);
 		}
 		else
@@ -282,8 +348,8 @@ Class ListMenuItemUnTextItemM : ListMenuItemSelectable
 	Font mFont;
 	int mColor;
 	int mColorSelected;
-	bool isselected;
 	double selfade;
+	transient uint prevms;
 
 	void Init( ListMenuDescriptor desc, String text, String hotkey, Name child, int param = 0 )
 	{
@@ -293,6 +359,7 @@ Class ListMenuItemUnTextItemM : ListMenuItemSelectable
 		mColor = desc.mFontColor;
 		mColorSelected = desc.mFontcolor2;
 		mHotkey = hotkey.GetNextCodePoint(0);
+		prevms = MSTime();
 	}
 
 	void InitDirect( double x, double y, int height, int hotkey, String text, Font font, int color, int color2, Name child, int param = 0 )
@@ -303,18 +370,26 @@ Class ListMenuItemUnTextItemM : ListMenuItemSelectable
 		mColor = color;
 		mColorSelected = color2;
 		mHotkey = hotkey;
-	}
-
-	override void Ticker()
-	{
-		Super.Ticker();
-		if ( isselected ) selfade = min(1.,selfade+5./GameTicRate);
-		else selfade = max(0.,selfade-3./GameTicRate);
+		prevms = MSTime();
 	}
 
 	override void Draw( bool selected, ListMenuDescriptor desc )
 	{
-		isselected = selected;
+		if ( prevms )
+		{
+			double frametime = (MSTime()-prevms)/1000.;
+			// naive, but whatever
+			if ( selected )
+			{
+				double theta = clamp(5.*frametime,0.,1.);
+				selfade = min(1.,selfade+theta);
+			}
+			else
+			{
+				double theta = clamp(3.*frametime,0.,1.);
+				selfade = max(0.,selfade-theta);
+			}
+		}
 		int w = desc?desc.DisplayWidth():ListMenuDescriptor.CleanScale;
 		int h = desc?desc.DisplayHeight():-1;
 		String text = StringTable.Localize(mText);
@@ -325,8 +400,7 @@ Class ListMenuItemUnTextItemM : ListMenuItemSelectable
 		double y = mYPos;
 		if ( w == ListMenuDescriptor.CleanScale )
 		{
-			x = (x-160)*CleanXFac_1+(Screen.GetWidth()*.5);
-			y = (y-100)*CleanYFac_1+(Screen.GetHeight()*.5);
+			UnUtility.AdjustClean_1(x,y);
 			Screen.DrawText(mFont,mColor,x,y,text,DTA_CleanNoMove_1,true,DTA_Alpha,1.-selfade);
 			UnUtility.StripColor(text);	// full tint when selected, ignore color tags
 			Screen.DrawText(mFont,mColorSelected,x,y,text,DTA_CleanNoMove_1,true,DTA_Alpha,selfade);
@@ -337,5 +411,6 @@ Class ListMenuItemUnTextItemM : ListMenuItemSelectable
 			UnUtility.StripColor(text);	// full tint when selected, ignore color tags
 			Screen.DrawText(mFont,mColorSelected,x,y,text,DTA_VirtualWidth,w,DTA_VirtualHeight,h,DTA_FullscreenScale,FSMode_ScaleToFit43,DTA_Alpha,selfade);
 		}
+		prevms = MSTime();
 	}
 }
