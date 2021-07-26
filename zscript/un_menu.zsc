@@ -85,14 +85,18 @@ Class UnPlayerMenu : ListMenu
 	const BASEOFS = 180.;
 
 	Array<TextureID> portraits;
-	double fact, fact2;
-	int prev;
+	Array<BrokenLines> traits, stats, bios;
+	double fact, fact2, fact3;
+	int prev, part, ppart;
 	transient uint prevms;
 
 	override void Init( Menu parent, ListMenuDescriptor desc )
 	{
 		Super.Init(parent,desc);
 		portraits.Resize(PlayerClasses.Size());
+		traits.Resize(PlayerClasses.Size());
+		stats.Resize(PlayerClasses.Size());
+		bios.Resize(PlayerClasses.Size());
 		for ( int i=0; i<mDesc.mItems.Size(); i++ )
 		{
 			Name act;
@@ -102,6 +106,12 @@ Class UnPlayerMenu : ListMenu
 				continue;
 			let def = GetDefaultByType((Class<PlayerPawn>)(PlayerClasses[param].type));
 			portraits[param] = TexMan.CheckForTexture(def.Portrait,TexMan.Type_Any);
+			String str = StringTable.Localize("$PF_"..PlayerClasses[param].type.GetClassName());
+			traits[param] = SmallFont2.BreakLines(str,400);
+			str = StringTable.Localize("$ST_"..PlayerClasses[param].type.GetClassName());
+			stats[param] = SmallFont2.BreakLines(str,400);
+			str = StringTable.Localize("$BIO_"..PlayerClasses[param].type.GetClassName());
+			bios[param] = SmallFont2.BreakLines(str,400);
 		}
 		prevms = MSTime();
 	}
@@ -127,6 +137,24 @@ Class UnPlayerMenu : ListMenu
 				MenuSound("menu/cursor");
 				fact += 1.;
 				fact2 = -1.;
+			}
+			return true;
+		case MKEY_Up:
+			if ( part > -1 )
+			{
+				ppart = part;
+				part--;
+				fact3 = 1.;
+				MenuSound("menu/change");
+			}
+			return true;
+		case MKEY_Down:
+			if ( part < 1 )
+			{
+				ppart = part;
+				part++;
+				fact3 = 1.;
+				MenuSound("menu/change");
 			}
 			return true;
 		case MKEY_Enter:
@@ -192,6 +220,7 @@ Class UnPlayerMenu : ListMenu
 			double theta = clamp(8.*frametime,0.,1.); // naive, but whatever
 			fact = fact*(1.-theta);
 			fact2 = fact2*(1.-theta);
+			fact3 = fact3*(1.-theta);
 		}
 		String str = StringTable.Localize("$MNU_CHOOSECLASS");
 		double x = (320-BigFont.StringWidth(str))/2;
@@ -269,6 +298,75 @@ Class UnPlayerMenu : ListMenu
 			if ( ofs < -CleanWidth_1/2 ) continue;
 			if ( ofs > CleanWidth_1/2 ) continue;
 			DrawProfile(i,ofs);
+		}
+		// draw stats and traits of current selection
+		if ( ci is 'ListMenuItemTextItem' )
+		{
+			Name act;
+			Int param;
+			[act, param] = ci.GetAction();
+			if ( (param >= 0) && (param < portraits.Size()) )
+			{
+				double invfact3 = (1.-fact3);
+				if ( (part == -1) || ((ppart == -1) && (fact3 > 0.)) )
+				{
+					int lmax = 0;
+					for ( int i=0; i<traits[param].Count(); i++ )
+					{
+						if ( traits[param].StringWidth(i) > lmax )
+							lmax = traits[param].StringWidth(i);
+					}
+					x = 110-lmax;
+					y = 85-(traits[param].Count()*SmallFont2.GetHeight()+4)/2;
+					y -= (ppart==-1)?(invfact3*16):(fact3*16);
+					UnUtility.AdjustClean_1(x,y);
+					Screen.Dim("Black",.75*((ppart==-1)?fact3:invfact3),int(x-8*CleanXFac_1),int(y-4*CleanYFac_1),(lmax+16)*CleanXFac_1,(traits[param].Count()*SmallFont2.GetHeight()+12)*CleanYFac_1);
+					for ( int i=0; i<traits[param].Count(); i++ )
+					{
+						if ( traits[param].StringAt(i).Length() == 2 )
+							y += 4*CleanYFac_1;
+						Screen.DrawText(SmallFont2,Font.CR_WHITE,x,y,traits[param].StringAt(i),DTA_ScaleX,CleanXFac_1,DTA_ScaleY,CleanYFac_1,DTA_Alpha,(ppart==-1)?fact3:invfact3);
+						y += SmallFont2.GetHeight()*CleanYFac_1;
+					}
+					lmax = 0;
+					for ( int i=0; i<stats[param].Count(); i++ )
+					{
+						if ( stats[param].StringWidth(i) > lmax )
+							lmax = stats[param].StringWidth(i);
+					}
+					x = 210;
+					y = 85-(stats[param].Count()*SmallFont2.GetHeight()+4)/2;
+					y -= (ppart==-1)?(invfact3*16):(fact3*16);
+					UnUtility.AdjustClean_1(x,y);
+					Screen.Dim("Black",.75*((ppart==-1)?fact3:invfact3),int(x-8*CleanXFac_1),int(y-4*CleanYFac_1),(lmax+16)*CleanXFac_1,(stats[param].Count()*SmallFont2.GetHeight()+12)*CleanYFac_1);
+					for ( int i=0; i<stats[param].Count(); i++ )
+					{
+						if ( stats[param].StringAt(i).Length() == 2 )
+							y += 4*CleanYFac_1;
+						Screen.DrawText(SmallFont2,Font.CR_WHITE,x,y,stats[param].StringAt(i),DTA_ScaleX,CleanXFac_1,DTA_ScaleY,CleanYFac_1,DTA_Alpha,(ppart==-1)?fact3:invfact3);
+						y += SmallFont2.GetHeight()*CleanYFac_1;
+					}
+				}
+				if ( (part == 1) || ((ppart == 1) && (fact3) > 0.) )
+				{
+					int lmax = 0;
+					for ( int i=0; i<bios[param].Count(); i++ )
+					{
+						if ( bios[param].StringWidth(i) > lmax )
+							lmax = bios[param].StringWidth(i);
+					}
+					x = 160-lmax/2;
+					y = 85-(bios[param].Count()*SmallFont2.GetHeight())/2;
+					y += (ppart==1)?(invfact3*16):(fact3*16);
+					UnUtility.AdjustClean_1(x,y);
+					Screen.Dim("Black",.75*((ppart==1)?fact3:invfact3),int(x-8*CleanXFac_1),int(y-4*CleanYFac_1),(lmax+16)*CleanXFac_1,(bios[param].Count()*SmallFont2.GetHeight()+8)*CleanYFac_1);
+					for ( int i=0; i<bios[param].Count(); i++ )
+					{
+						Screen.DrawText(SmallFont2,Font.CR_WHITE,x,y,bios[param].StringAt(i),DTA_ScaleX,CleanXFac_1,DTA_ScaleY,CleanYFac_1,DTA_Alpha,(ppart==1)?fact3:invfact3);
+						y += SmallFont2.GetHeight()*CleanYFac_1;
+					}
+				}
+			}
 		}
 		Menu.Drawer();
 		prevms = MSTime();
