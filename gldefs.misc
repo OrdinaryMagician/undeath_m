@@ -1,0 +1,12 @@
+HardwareShader Texture "graphics/portraits/pt_sada.png"
+{
+	Shader "shaders/glsl/Bilinear.fp"
+}
+HardwareShader Texture "graphics/portraits/pt_zorou.png"
+{
+	Shader "shaders/glsl/Bilinear.fp"
+}
+HardwareShader Texture "graphics/portraits/pt_nyakko.png"
+{
+	Shader "shaders/glsl/Bilinear.fp"
+}

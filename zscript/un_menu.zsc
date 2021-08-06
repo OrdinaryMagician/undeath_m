@@ -254,6 +254,35 @@ Class UnPlayerMenu : ListMenu
 				Screen.DrawText(SmallFont,Font.CR_WHITE,x-BASEOFS*CleanXFac_1*fact2,y,str,DTA_ScaleX,CleanXFac_1,DTA_ScaleY,CleanYFac_1,DTA_Alpha,1.-abs(fact2));
 			}
 		}
+		// hints
+		if ( part == -1 )
+		{
+			str = StringTable.Localize("$MNU_STATSRET");
+			x = 80-SmallFont2.StringWidth(str);
+			y = NAMEY-SmallFont.GetHeight();
+			UnUtility.AdjustClean_1(x,y);
+			Screen.DrawText(SmallFont2,Font.CR_WHITE,x,y,str,DTA_ScaleX,CleanXFac_1,DTA_ScaleY,CleanYFac_1);
+		}
+		else if ( part == 1 )
+		{
+			str = StringTable.Localize("$MNU_BIORET");
+			x = 240;
+			y = NAMEY-SmallFont.GetHeight();
+			UnUtility.AdjustClean_1(x,y);
+			Screen.DrawText(SmallFont2,Font.CR_WHITE,x,y,str,DTA_ScaleX,CleanXFac_1,DTA_ScaleY,CleanYFac_1);
+		}
+		else
+		{
+			str = StringTable.Localize("$MNU_STATS");
+			x = 80-SmallFont2.StringWidth(str);
+			y = NAMEY-SmallFont.GetHeight();
+			UnUtility.AdjustClean_1(x,y);
+			Screen.DrawText(SmallFont2,Font.CR_WHITE,x,y,str,DTA_ScaleX,CleanXFac_1,DTA_ScaleY,CleanYFac_1);
+			str = StringTable.Localize("$MNU_BIO");
+			x = 240;
+			UnUtility.AdjustClean_1x(x);
+			Screen.DrawText(SmallFont2,Font.CR_WHITE,x,y,str,DTA_ScaleX,CleanXFac_1,DTA_ScaleY,CleanYFac_1);
+		}
 		if ( fact2 != 0. )
 		{
 			let pi = mDesc.mItems[prev];
@@ -316,7 +345,7 @@ Class UnPlayerMenu : ListMenu
 						if ( traits[param].StringWidth(i) > lmax )
 							lmax = traits[param].StringWidth(i);
 					}
-					x = 110-lmax;
+					x = 100-lmax;
 					y = 85-(traits[param].Count()*SmallFont2.GetHeight()+4)/2;
 					y -= (ppart==-1)?(invfact3*16):(fact3*16);
 					UnUtility.AdjustClean_1(x,y);
@@ -334,7 +363,7 @@ Class UnPlayerMenu : ListMenu
 						if ( stats[param].StringWidth(i) > lmax )
 							lmax = stats[param].StringWidth(i);
 					}
-					x = 210;
+					x = 220;
 					y = 85-(stats[param].Count()*SmallFont2.GetHeight()+4)/2;
 					y -= (ppart==-1)?(invfact3*16):(fact3*16);
 					UnUtility.AdjustClean_1(x,y);

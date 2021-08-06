@@ -82,23 +82,47 @@ The body of the undying requires blood to heal itself, blood brimming with iron 
 
 Of course, you can keep yourself healthy by eating and drinking when needed, but there are also other methods by which you can enrich your blood, one of them being the valuable, but rare **Akashna Extract**: A nutritious beverage concocted with the fresh blood of a healthy **Akashna**. Do note however that the very thick stench of blood may attract unwanted attention when opened.
 
-Thinning of the blood, if untreated, will eventually result in the inability to regenerate, meaning you will no longer be able to fight, and your body will remain dead. In this case, not all is truly lost, as your immortal soul can force the body to scatter, allowing it to reform in a safer place.
+Thinning of the blood, if untreated, will eventually result in the inability to regenerate, meaning you will no longer be able to fight, and your body will remain dead. In this case, not all is truly lost, as your immortal soul can force the body to scatter, allowing it to reform in a safer place and giving a chance for your companions to tend to your health.
 
 ### The Hub
 
-Your missions will take you all around various locales within Hell, but there will always be one central hub where you can take a break, have a chat with your comrades, trade goods, have lunch, enjoy a bath together, get some sleep...
+Your missions will take you all around various locales within Hell, but there will always be a hub where you can take a break, have a chat with your comrades, trade goods, have lunch, enjoy a bath together, get some sleep...
 
 While this safe haven may seem a bit small with just you and your squad around, do keep in mind that sometimes certain individuals you encounter throughout your adventures may stop by for a visit. Some might even stay and help around, set up shop, and so on. Despite the current forces in power, it's not like the civilian population rejects your kind.
 
 ### Missions
 
-Most of your assassination jobs can be tackled in any order. In some cases, a bit of surveying ahead of time might also be helpful. Each character has set targets according to their needed skills. While you focus on your job, your companions will definitely deal with their own targets by themselves, given time.
+Most of your assassination jobs can be tackled in any order. In some cases, a bit of surveying ahead of time might also be helpful. Things are generally open ended as you make your way towards each target, and ultimately, to the very innermost part of Hell's capital city and the *"big shot"* at the top of the list. You may sometimes find a path locked, in which case you should probably keep it marked for later, as whatever you may need for it to open could be found elsewhere.
 
-Some side missions might also open up by request of certain people you'll come across. These side missions can be handled by any character, and offer some juicy rewards that might prove useful along the way. Nevertheless, they are optional, so you can freely choose whether or not to do them.
+Some side missions might also open up by request of certain people you'll come across. These offer some juicy rewards that might prove useful along the way. Nevertheless, they are optional, so you can freely choose whether or not to do them.
 
 ### Bonding
 
 Spending time with your companions is always a nice thing. Not only can you hang out with them in the hub, but you can also ask them to come along with you for your missions, should you find yourself shorthanded. Having friends around also allows you to share items. Just remember one thing: They also need the stuff, don't be greedy.
+
+### Equipment
+
+While each character has a set of starting items and weaponry, more can be found out in the field if one knows where to look, and some merchants might even sell you their wares in exchange for **Crystallized Ardent**, which can be obtained as you slay demons.
+
+One important detail to keep in mind about this **Crystallized Ardent**, however, is that should you die and scatter yourself, any of it you're holding will be lost, as the process causes it to return to its natural state and dissipate into the air. It is not lost forever, though, as any enemies nearby might absorb it in their bodies, often raising from the dead in the process, allowing you to recover it as you slay them again.
+
+### . . .
+
+## The Hit List
+
+Your mission is to slay the nine archdemon generals responsible for the coup of 2145, each and every single one of them, without exception. Whatever they may try to get away, you must bring swift death to them.
+
+1. **Berias Ysharan**, the **Lustful Malefactor**
+2. **Destora Arathon**, the **Blood Dancer**
+3. **Urthura Vexamal**, the **Beacon of Scorn**
+4. **Gyeran Rashaz**, the **Flesh Servant**
+5. **Vera Akerastora**, the **Scion of Gluttony**
+6. **Kaume Irishtanar**, the **Lord of Deceit**
+7. **Taeron Yraisamal**, the **Betrayer of Faith**
+8. **Thaar Adarion**, the **Despot Knight**
+9. **Erebus Arthamuz**, the **Grand General**
+
+If possible, you may also attempt to locate **Akedas Aximal**, the right hand man and personal advisor of the leading general, and dispose of him too. No one knows of his actual hiding place since the onslaught of the human soldier and the heroic machine, so it may be necessary to conduct a thorough investigation.
 
 ### . . .
 
