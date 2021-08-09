@@ -1,0 +1,12 @@
+Marisa Kirisame — Scripting, art, modeling, mapping, shaders
+BouncyTEM — Music
+
+Third party libraries and assets:
+
+ Gutamatics (C)2020 Jessica Russel
+ (https://gitlab.com/Gutawer/gzdoom-gutamatics)
+
+ Source Han Sans/Serif/Mono fonts (C)2014-2021 Adobe
+ (https://github.com/adobe-fonts/source-han-sans)
+ (https://github.com/adobe-fonts/source-han-serif)
+ (https://github.com/adobe-fonts/source-han-mono)
