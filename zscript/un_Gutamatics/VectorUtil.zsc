@@ -1,4 +1,4 @@
-class un_VectorUtil {
+class un_GM_VectorUtil {
 	/// Linearly interpolates between two Vector3s, clamping the parameters.
 	static Vector3 lerpVec3(Vector3 from, Vector3 to, double time) {
 		time = clamp(time, 0, 1);

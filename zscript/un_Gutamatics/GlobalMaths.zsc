@@ -1,4 +1,4 @@
-class un_GlobalMaths {
+class un_GM_GlobalMaths {
 	/// Returns the sign of s.
 	static int sign(double s) {
 		if (s > 0) return 1;
@@ -67,17 +67,13 @@ class un_GlobalMaths {
 	}
 
 	// Converts from Normalised Device Coordinates to Viewport coordinates.
-	static Vector2 ndcToViewport(Vector3 ndcCoords, bool useScreenblocks = true, PlayerInfo player = NULL) {
-		// player is needed for screenblocks
+	// This is `ui` scope to safely access `screenblocks`.
+	static ui Vector2 ndcToViewport(Vector3 ndcCoords, bool useScreenblocks = true) {
 		if (useScreenblocks) {
-			if (player == NULL) {
-				player = players[consoleplayer];
-			}
 			int viewwindowx, viewwindowy, viewwidth, viewheight;
 			[viewwindowx, viewwindowy, viewwidth, viewheight] = Screen.getViewWindow();
 			int screenHeight = Screen.getHeight();
 			int height = screenHeight;
-			int screenblocks = CVar.getCVar("screenblocks", player).getInt();
 			if (screenblocks < 10) {
 				height = (screenblocks * screenHeight / 10) & ~7;
 			}
