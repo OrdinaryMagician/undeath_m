@@ -1,0 +1,11 @@
+version 222
+set color "ff 00 00"
+set gender "neutral"
+set name "Undead"
+set neverswitchonpickup "true"
+set crosshairon "false"
+set gl_bloom "true"
+set gl_fogmode "2"
+set gl_precache "true"
+set gl_texture_filter "6"
+set nocheats "true"

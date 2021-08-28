@@ -1,0 +1,7 @@
+/* bare minimum that needs to be changed */
+tab "event undeathinventory"
+mwheeldown weapprev
+mwheelup weapnext
+r +reload
+f +user1
+t +user2

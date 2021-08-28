@@ -1,0 +1,44 @@
+// dialogue definitions
+[es]
+// intro cutscene (unsure if I'll actually make one)
+CUT_INTRO1TXT = "Buf, menudo viaje...";
+CUT_INTRO2TXT = "Pero ya estamos aquí, el viejo Kur.";
+CUT_INTRO3TXT = "O el Infierno, como los Kuriste lo llaman ahora.";
+CUT_INTRO3TXT = "A ver, gente, tenemos una misión, y esa misión es cargarnos a unos cuantos asquerosos archidemonios.";
+CUT_INTRO4TXT = "Jujujuju... Que ganas tengo de hacerlos sufrir.";
+CUT_INTRO5TXT = "Nyakkosei, eres tan adorable cuando te pones así de emocionade.";
+CUT_INTRO6TXT = "Gracias, mami.";
+CUT_INTRO7TXT = "*bufido*"
+CUT_INTRO8TXT = "¿Que?";
+CUT_INTRO9TXT = "Nada.";
+CUT_INTRO10TXT = "*suspiro* Es que te comía a lametazos... Eres monísime.";
+CUT_INTRO11TXT = "Lo mismo digo.";
+CUT_INTRO12TXT = "Bueno, menudo par. No tenemos tiempo para tontear, que hay mucho que hacer.";
+CUT_INTRO13TXT = "Ya haremos nuestras cositas en privado luego. Jijiji...";
+CUT_INTRO14TXT = "*risita* Pero es que me cuesta tanto aguantarme...";
+CUT_INTRO15TXT = "¿No puedes esperar un poco? Al menos hasta que montemos el campamento.";
+CUT_INTRO16TXT = "Vale, lo intentaré.";
+CUT_INTRO17TXT = "Iría bien estudiar el terreno un poco, he oído que por aquí hay termas naturales.";
+CUT_INTRO18TXT = "Eso si que estaría bien, vaya que sí...";
+CUT_INTRO19TXT = "Buahhhh... Aguas termales...";
+CUT_INTRO20TXT = "Suena bien, ciertamente.";
+CUT_INTRO21TXT = "Un baño caliente desde luego que estaría bien ahora mismo. A ver, los dos ya empezais a oler.";
+CUT_INTRO22TXT = "Bueno aunque tampoco es que me importe, sobre todo Sadasei. Suelta ese olor a tigre que me pone a tope.";
+CUT_INTRO23TXT = "Mira que eres...";
+CUT_INTRO24TXT = "Dices eso como si tu tampoco apestaras cuando te pones a sudar.";
+CUT_INTRO25TXT = "El truco está en no sudar. ¿Por que debería ir corriendo por ahí con todo ese peso encima? Lo mío es la magia, despues de todo.";
+CUT_INTRO26TXT = "*huele*";
+CUT_INTRO27TXT = "O- ¿Que?";
+CUT_INTRO28TXT = "*sigue oliendo*";
+CUT_INTRO29TXT = "¡Jajajaja paraaaa! ¡Tu también apestas!";
+CUT_INTRO30TXT = "Que mono...";
+CUT_INTRO31TXT = "Nunca entenderé por qué hueles tan... Apetecible.";
+CUT_INTRO32TXT = "Secreto de hechicere, jijijiji...";
+CUT_INTRO33TXT = "¿Que tal si restriegas esa cara bonita por mis sobacos para apreciarlo mejor? ¿Eh?";
+CUT_INTRO34TXT = "¡Jajajaja! Y luego soy yo la que se lleva una bronca por querer tontear...";
+CUT_INTRO35TXT = "Mmf...";
+CUT_INTRO36TXT = "Busquemos entonces esas aguas termales.";
+CUT_INTRO37TXT = "Eso, eso.";
+CUT_INTRO38TXT = "Ya estoy en ello, gente.";
+CUT_INTRO39TXT = "Oh, allá vamos.";
+CUT_INTRO40TXT = "Jejeje.";

@@ -1,0 +1,3 @@
+addkeysection "$UN_KEYS" "UNDEATH"
+addmenukey "$UN_INVMENU" "event undeathinventory"
+defaultbind "tab" "event undeathinventory"

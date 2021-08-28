@@ -1,0 +1,111 @@
+// menu definitions
+[es]
+MNU_NEWGAME = "Nueva Partida";
+MNU_GAMEFILES = "Cargar/Guardar";
+MNU_OPTIONS = "Opciones";
+MNU_INFO = "Ayuda";
+MNU_QUITGAME = "Salir";
+QUITMSG = "\cjQue tengas un buen descanso,\nya que tu próxima batalla espera.\c-";
+MNU_CHOOSECLASS = "Elige tu personaje:";
+MNU_STATS = "Estadísticas \cg▲\c-";
+MNU_BIO = "\cg▼\c- Perfil";
+MNU_STATSRET = "Volver \cg▼\c-";
+MNU_BIORET = "\cg▲\c- Volver";
+CNTRLMNU_USER1 = "Melé Rápido";
+CNTRLMNU_USER2 = "Recarga Secundaria";
+UN_KEYS = "Teclas de UNDEATH";
+UN_INVMENU = "Abrir Inventario";
+CLS_UNPLAYERF = "Guerrera";
+CLS_UNPLAYERM = "Explorador";
+CLS_UNPLAYERX = "Hechicere";
+PF_UNPLAYERF =
+"\cgFecha Nac.:\c- 2094-05-07\n"
+"\cgGénero:\c- Femenino\n"
+"\cgAltura:\c- 205cm\n"
+"\cgPeso:\c- 127kg\n"
+"\n"
+"\cgRasgos:\c-\n"
+" \cd+\c- Orientada a fuerza\n"
+" \cd+\c- Afinidad piromántica\n"
+" \cd+\c- Vigorosa\n"
+" \cg-\c- Lenta";
+PF_UNPLAYERM =
+"\cgFecha Nac.:\c- 2097-04-12\n"
+"\cgGénero:\c- Masculino\n"
+"\cgAltura:\c- 166cm\n"
+"\cgPeso:\c- 57kg\n"
+"\n"
+"\cgRasgos:\c-\n"
+" \cd+\c- Orientado a destreza\n"
+" \cd+\c- Afinidad de armas\n"
+" \cd+\c- Sigiloso\n"
+" \cg-\c- Melé débil";
+PF_UNPLAYERX =
+"\cgFecha Nac.:\c- 2086-06-19\n"
+"\cgGénero:\c- No-binario\n"
+"\cgAltura:\c- 155cm\n"
+"\cgPeso:\c- 43kg\n"
+"\n"
+"\cgRasgos:\c-\n"
+" \cd+\c- Orientación arcana\n"
+" \cd+\c- Maná rebosante\n"
+" \cd+\c- Ágil\n"
+" \cg-\c- Cañón de cristal";
+ST_UNPLAYERF =
+"\cgArmas:\c-\n"
+" · Claymore de Pronoxita\n"
+" · Subfusil Nelaka Xei\n"
+"\n"
+"\cgHechizos:\c-\n"
+" · Destello de Áscuas\n"
+" · Erupción\n"
+" · Piel Pétrea\n"
+" · Sol Rojo\n"
+" · Torbellino Ardiente";
+ST_UNPLAYERM =
+"\cgArmas:\c-\n"
+" · Auto-Rifle Largo Sokana\n"
+" · 2x Daga de Pronoxita\n"
+"\n"
+"\cgHechizos:\c-\n"
+" · Curación\n"
+" · Curar Veneno\n"
+" · Barrera\n"
+" · Gran Cruz\n"
+" · Retribución";
+ST_UNPLAYERX =
+"\cgArmas:\c-\n"
+" · N/A\n"
+"\n"
+"\cgHechizos:\c-\n"
+" · Corte Divino\n"
+" · Enredo Oscuro\n"
+" · Perdición\n"
+" · Mágia Desenterrada\n"
+" · Llamarada Maestra\n"
+" · Ira del Monarca\n"
+" · Parada Crónica";
+BIO_UNPLAYERF = "Nacida en 2094 en Kora, Akkou, como la mayor de dos hermanos. Sada pasó la mayor parte de sus años de juventud entrenando para ayudar a su familia en la granja.\n"
+"\n"
+"A los 20 años, sin embargo, conoció a un cierto hombre, un mercenario. Quedó impresionada con la enorme espada que usaba, y su destreza con tal arma. Los dos pasarían un tiempo juntos como buenos amigos, pero finalmente tuvieron que despedirse al verse llamado a una nueva misión.\n"
+"\n"
+"Fue entonces que se decidió por un cambio de oficio, esperando poder encontrarlo en el campo, también como mercenaria bajo la tutoría de Nussana Veryakhai. Fue ahí donde conoció a Zoryun y Nyakko, y los tres rápidamente se volverían amigos inseparables, y con el tiempo, su vínculo se haría mucho más estrecho.\n"
+"\n"
+"\cgAhora, es hora de que ponga a prueba su fuerza,\n"
+"y corte en pedazos las hordas del Infierno.\c-";
+BIO_UNPLAYERM = "Nacido en 2097 en Maria, Kurukurunishe, como hijo único de una pareja de armeros.\n"
+"\n"
+"Zorou tomó parte del negocio familiar desde una edad temprana, aprendiendo todo cuanto hay de armas Anarukon. Pasado un tiempo, con todo el conocimiento acumulado, probó suerte publicitando conceptos originales a la famosa Armería Nelaka, pero fue rechazado. Con sus sueños tan facilmente rotos, descendió en una depresión prácticamente inescapable.\n"
+"\n"
+"Entonces, un día, tuvo una revelación: Si no pudo vender sus armas, ¿por que no usarlas? Al parecer los exporadores estaban en alta demanda en el Imperio Sykhai, y había una guerrera famosa en esa tierra que podía entrenarlo. El resto de esta historia, como uno esperaría, lo llevó a conocer a Sada y Nyakko, los tres convirtiéndose en un equipo excepcional.\n"
+"\n"
+"\cgAhora, es hora de que ponga a prueba su fuerza,\n"
+"y dispare al mismo corazón del mal.\c-";
+BIO_UNPLAYERX = "Nacide en 2086 en Chiba, Japón, como hije únique de un padre Esper y una madre Anarukon.\n"
+"\n"
+"La mayor aspiración de Nyakko era convertirse en bruje todo-poderose. Esto finalmente le llevó a Sankaideriha, donde estudió bajo la enseñanza de la gran maestra Ikuya Kaou. Ahí, el vínculo innato con la magia de su sangre esper sobresaldría. Aprendió de varias escuelas, teniendo especial preferencia a cosas que explotan.\n"
+"\n"
+"Al graduarse, fue orientade a otros expertos para estudios más amplios. Una de ellos era una entrenadora de \"defensa personal\": Nussana Veryakhai, de Akkou. Sabiendo perfectamente que la hechicería no era simplemente cosa de \"disparar y ya está\", decidió estudiar con ella. En el proceso, conocería a dos maravillosos amigos, Sada y Zorou, los cuales han permanecido siempre a su lado desde entonces.\n"
+"\n"
+"\cgAhora, es hora de que ponga a prueba su fuerza,\n"
+"y reduzca esta vil plaga Demoníaca a cenizas.\c-";

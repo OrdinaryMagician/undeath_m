@@ -10,7 +10,7 @@ ListMenu "MainMenu"
 	UnTextItemM "$MNU_LOADGAME", "l", "LoadGameMenu"
 	UnTextItemM "$MNU_SAVEGAME", "s", "SaveGameMenu"
 	UnTextItemM "$MNU_OPTIONS", "o", "OptionsMenu"
-	UnTextItemM "$MNU_INFO", "i", "SWWMHelpMenu"
+	UnTextItemM "$MNU_INFO", "i", "UnHelpMenu"
 	UnTextItemM "$MNU_QUITGAME", "q", "QuitMenu"
 }
 ListMenu "MainMenuTextOnly"

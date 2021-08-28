@@ -1,0 +1,26 @@
+// common definitions
+[es]
+TTL_PRESENTSB = "presenta";
+TTL_GAMEBYA = "un juego de";
+UN_CREED1 =
+"Que la bestia no vea clemencia,\n"
+"ya que tal cosa nunca comprenderá.\n"
+"Que sienta dolor, su sangre brotar,\n"
+"solo en la muerte su sufrimiento terminará.";
+UN_CREED2 =
+"Que ningún vil demonio viva,\n"
+"ya que a tal cosa no tiene derecho.\n"
+"Que su misma existencia se deshaga,\n"
+"para pagar lo que a esta tierra ha hecho.";
+UN_CREED3 =
+"Que tu espada sea guía,\n"
+"que tu magia ilumine el sendero.\n"
+"Que tu arma hiera el corazón,\n"
+"que tus manos desgarren su cuerpo entero.";
+UN_CREED4 =
+"Por los pecados de todos ellos,\n"
+"por su necedad, por lo que su gente hizo.\n"
+"Que así se arrepientan de su traición,\n"
+"que lamenten haber robado nuestro paraíso.";
+UN_CREED5 =
+" — Credo de Veryakhai";
