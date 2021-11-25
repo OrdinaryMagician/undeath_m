@@ -11,6 +11,7 @@ enum EDoExplosionFlags
 	DE_HOWL = 64,		// 25% chance for hit enemies to howl
 	DE_COUNTENEMIES = 128,	// only count hits for hostiles
 	DE_COUNTSTEALTH = 256,	// only count hits for inactive monsters
+	DE_COUNTFHKILLS = 512	// only count kills for enemies that were at full health
 };
 
 Struct UnProjectionData
@@ -557,9 +558,12 @@ Class UnUtility
 			if ( (!(flags&DE_COUNTENEMIES) || hostile) && (!(flags&DE_COUNTSTEALTH) || inactive) ) nhit++;
 			int dmg = int(Damage*damagescale);
 			if ( dmg <= 0 ) continue;	// no harm
+			int oldhp = a.Health;
+			int basehp = a.GetSpawnHealth();
 			int ndmg = a.DamageMobj(Source,Instigator,dmg,(DamageType=='')?Source.DamageType:DamageType,DMG_EXPLOSION,atan2(-dir.y,-dir.x));
 			if ( a && !(flags&DE_NOBLEED) ) a.TraceBleed((ndmg>0)?ndmg:dmg,Source);
 			if ( (flags&DE_HOWL) && a && (a.Health > 0) && a.bISMONSTER && !Random[DoBlast](0,3) ) a.Howl();
+			if ( (flags&DE_COUNTFHKILLS) && (oldhp < basehp) ) continue;	// was not at full health
 			if ( (!a || (a.Health <= 0)) && (!(flags&DE_COUNTENEMIES) || hostile) && (!(flags&DE_COUNTSTEALTH) || inactive) ) nkill++;
 		}
 		return nhit, nkill;

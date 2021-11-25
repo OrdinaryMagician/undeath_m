@@ -1,7 +1,6 @@
 GameInfo
 {
 	Border = 2, 0, "graphics/bord_tr.png", "graphics/bord_t.png", "graphics/bord_tl.png", "graphics/bord_r.png", "graphics/bord_l.png", "graphics/bord_br.png", "graphics/bord_b.png", "graphics/bord_bl.png"
-	BackpackType = "UnBackpack"
 	BorderFlat = "graphics/bord_flat.png"
 	ChatSound = "misc/chat"
 	ForceTextInMenus = true
@@ -33,9 +32,6 @@ GameInfo
 	DefaultConversationMenuClass = "UnConversationMenu"
 	NoMergePickupMsg = true
 	StatusBarClass = "UnStatusBar"
-	StatScreen_Single = "DummyStatusScreen"
-	StatScreen_Coop = "DummyStatusScreen"
-	StatScreen_DM = "DummyStatusScreen"
 }
 
 ClearSkills
