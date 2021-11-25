@@ -434,6 +434,21 @@ Class UnListMenu : ListMenu
 	}
 }
 
+Class UnMainMenu : UnListMenu
+{
+	override void Drawer()
+	{
+		Super.Drawer();
+		String str = StringTable.Localize("$UN_MODVER");
+		int width = smallfont2.StringWidth(str)+8;
+		int height = smallfont2.GetHeight()+4;
+		double xx = CleanWidth_1-width;
+		double yy = CleanHeight_1-height;
+		Screen.Dim("Black",.75,int(xx*CleanXFac_1),int(yy*CleanYFac_1),int(width*CleanXFac_1),int(height*CleanYFac_1));
+		Screen.DrawText(smallfont2,Font.CR_WHITE,(xx+4)*CleanXFac_1,(yy+2)*CleanYFac_1,str,DTA_CleanNoMove_1,true);
+	}
+}
+
 Class ListMenuItemUnLogo : ListMenuItem
 {
 	TextureID mTexture;

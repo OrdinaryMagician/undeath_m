@@ -16,11 +16,11 @@ At the moment, there's very little to say about this, only scattered ideas exist
 
 ## The Story
 
-It is the year 2165 in the human calendar. Their world has been ravaged, many of their kind have fallen since the first incursions, but others have taken a step in fighting back, repelling the demonic forces. Among them was the legendary **Doom Marine**, a soldier of the **UAC**, the greedy, power hungry human-led organization that caused this whole incident to take place. But there was also the heroic **Demolitionist**, a machine of war constructed by a human that is rumored to have immortal blood.
+It is the year 2165 in the human calendar. Their world has been ravaged, many of their kind have fallen since the first incursions, but others have taken a step in fighting back, repelling the demonic forces. Many fought to push them back, some earning their fame as heroes in the process. Together, they put a stop to the invasion, and **Earth** was once again saved from impending doom.
 
-Together, these two managed to strike fear into the hearts of the demons, but this isn't enough. The corruption still lies at the very heart of **Hell**, the **Archdemon Generals**, the traitors who overthrew the **Kuriste Royal Family**, shattering all ties to the **Anarukon Free Communities**, they still remain in power.
+But alas, this was not enough, as corruption still lies at the very heart of **Hell** itself: The **Archdemon Generals**, the traitors who overthrew the **Kuriste Royal Family**, shattering all ties to the **Anarukon Free Communities**, they still remain in power.
 
-Your objective, warrior, is to end the lives of each and every one of them.
+Your objective, warrior, is to end the lives of each and every one of them. As a **Disciple of Veryakhai**, it is your mission to fight for the liberation of the olden realm of **Kur**, wresting it from the hands of the demons who stole it away.
 
 ## The Hit List
 
@@ -34,7 +34,7 @@ Your mission is to slay the nine archdemon generals responsible for the coup of 
 6. **Kaume Irishtanar**, the **Lord of Deceit**
 7. **Taeron Yraisamal**, the **Betrayer of Faith**
 8. **Thaar Adarion**, the **Despot Knight**
-9. **Erebus Arthamuz**, the **Grand General**
+9. **Erebus Arthamuz**, the **Decadent Conqueror**
 
 If possible, you may also attempt to locate **Akedas Aximal**, the right hand man and personal advisor of the leading general, and dispose of him too. No one knows of his actual hiding place since the onslaught of the human soldier and the heroic machine, so it may be necessary to conduct a thorough investigation.
 
@@ -136,6 +136,10 @@ Most of your assassination jobs can be tackled in any order. In some cases, a bi
 
 Some side missions might also open up by request of certain people you'll come across. These offer some juicy rewards that might prove useful along the way. Nevertheless, they are optional, so you can freely choose whether or not to do them.
 
+### The World Map
+
+Upon leaving an area, rather than have to deal with several kilometers of travel on foot to the next one, you will be sent to the world map, where you can quickly move to other places you've unlocked. Each new exit you find from one area will open a new path to another. Make sure to explore thoroughly so you may find easy routes to all the various corners of Hell and make your journey throughout much easier.
+
 ### Bonding
 
 Spending time with your companions is always a nice thing. Not only can you hang out with them in the hub, but you can also ask them to come along with you for your missions, should you find yourself shorthanded. Having friends around also allows you to share items. Just remember one thing: They also need the stuff, don't be greedy.
@@ -171,6 +175,10 @@ Potential for an expansion is definitely there once the main game is done. This 
 ### The Story
 
 June of 2148, the **Demon Invasion** has reached its peak. Countless brave heroes are out there fighting back, repelling the invading forces. Of course, here in **Southern Ireland**, things couldn't be any worse. The rather incompetent local military hasn't been able to do much, and the government, in an unexpected turn, has decided to put its faith in the **Anarukon** population of their various cities. Warriors, witches, and many others have answered this call, seeing this as a chance to finally offer the nation who once treated them like monsters a very big slice of humble pie.
+
+### Rough Outline
+
+This one will be a bit more linear, I feel. A more traditional central hub with unlockable maps around it, or perhaps multiple hubs. Yeah, starting to sound Hexen-ish there, I think... The point is to explore various locations and their surroundings, obtaining key items that will allow you progress deeper and deeper into the epicenter of the London invasion. Each hub will end with a boss encounter, before proceeding to the next, until reaching the "final boss". All of this has yet to be decided, of course. It'd be best to leave it be until the base game is actually done.
 
 ### Children of the Witch of London
 

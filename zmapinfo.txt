@@ -76,7 +76,6 @@ DefaultMap
 	Gravity = 950
 	AirControl = 0
 	AirSupply = 30
-	MapBackground = "graphics/unmapbg.png"
 	FallingDamage
 	MonsterFallingDamage
 	ProperMonsterFallingDamage

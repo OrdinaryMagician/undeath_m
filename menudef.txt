@@ -1,6 +1,6 @@
 ListMenu "MainMenu"
 {
-	Class "UnListMenu"
+	Class "UnMainMenu"
 	Size Clean
 	Font "BigFont", "White", "Red"
 	LineSpacing 40
@@ -15,7 +15,7 @@ ListMenu "MainMenu"
 }
 ListMenu "MainMenuTextOnly"
 {
-	Class "UnListMenu"
+	Class "UnMainMenu"
 	Size Clean
 	Font "BigFont", "White", "Red"
 	LineSpacing 40
