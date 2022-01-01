@@ -2,7 +2,7 @@ version "4.7"
 
 /*
    UNDEATH Main Codebase
-   (C)2021 Marisa Kirisame, UnSX Team
+   (C)2021-2022 Marisa Kirisame, UnSX Team
    This copyright and the attached LICENSE.code file apply to all files
    included from here, with the exception of the Gutamatics library
 */

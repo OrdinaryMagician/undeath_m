@@ -88,7 +88,7 @@ Specialized in firearm combat, he's quite an expert with all sorts of guns, incl
 
 ![portrait](docimg/nyakko.png)
 
-Specialized in magic, they are well-versed in many different schools, allowing them to perform some of the most powerful spells known. From all forms of elemental magic, to even harnessing time manipulation, nothing escapes them. They're the weakest physically, but this is compensated by a much larger mana pool. Their small frame allows for better mobility, too, but limits the kinds of conventional weapons they may be able to use.
+Specialized in magic, they are well-versed in many different schools, allowing them to perform some of the most powerful spells known. From all forms of elemental magic, to even harnessing time manipulation, nothing escapes them. They're the weakest physically, but this is compensated by a much larger mana pool. Their small frame allows for better mobility, too, but limits the kinds of conventional weapons they may be able to use. In addition, they do know some very potent spells, which they've mastered and refined over the span of decades, however, they can't be bothered to learn any new spells, so those are all they have.
 
 **Starting Weapons:**
 
@@ -152,7 +152,7 @@ One important detail to keep in mind about this **Crystallized Ardent**, however
 
 ### Spells
 
-The very deity that created magic billions of years ago is often quoted with saying *"anyone with a soul can cast magic, but only those with a loving heart can truly **USE** it"*. Magic is as ubiquitous in the daily lives of the **Anarukon** as is technology, serving as yet another tool at their disposal to make things easier. On the field, each character has a lineup of spells they can employ, each consuming a certain amount of mana in the process. Still, more spells can be obtained during the mission, if you can find someone or something to learn them from.
+The very deity that created magic billions of years ago is often quoted with saying *"anyone with a soul can cast magic, but only those with a loving heart can truly **USE** it"*. Magic is as ubiquitous in the daily lives of the **Anarukon** as is technology, serving as yet another tool at their disposal to make things easier. On the field, each character has a lineup of spells they can employ, each consuming a certain amount of mana in the process. Still, more spells can be obtained during the mission, if you can find someone or something to learn them from, and they belong to the school you specialize in.
 
 Spells are equipped as would be weapons, wherein primary fire would perform a straight cast, while secondary fire would allow you to charge up a stronger version of the spell. Up to seven spells can be attuned at the same time, taking up slots 4 through 0.
 
