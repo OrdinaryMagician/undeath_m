@@ -50,12 +50,12 @@ Three brave warriors, bonded by their many adventures together. All trained unde
 
 ![portrait](docimg/sada.png)
 
-Specialized in melee combat, she knows how to most efficiently employ the strongest of bladed weapons. Her skills with magic are focused on pyromancy. Due to her large stature, she may have trouble moving around, but this is complemented with much heftier resistances, basically making her the tank option.
+Specialized in melee combat, she knows how to most efficiently employ the strongest of bladed weapons. Her skills with magic are focused on pyromancy, the field she excels at. Due to her large stature, she may have trouble moving around, but this is complemented with much heftier resistances, basically making her the tank option. She favors larger weapons, as anything too small will feel awkward to her.
 
 **Starting Weapons:**
 
  - **Pronoxyte Claymore:** A large blade of hard metal, normally wielded with both hands, but **Sada** has no trouble using it one-handed. Like pretty much all **Anarukon** melee weapons it is made of **Pronoxyte**, a strong, hard metal that is also employed in electronics due to its high conductivity and heat resistance. In contact with an open wound, it causes a numbing effect, leaving foes in the dark about the fact they've been cut down and are bleeding out, although usually, with a weapon this large, they'll be quick to notice their whole body has been cleaved in half.
- - **Nelaka Xei PDW:** A popular submachine gun from the great imperial **Nelaka Arms Company**, employing caseless 5mm ammunition fired through a magic-based mechanism. Quite handy for dealing with targets that are too far for one to swing a blade at.
+ - **Nelaka Xei PDW:** A popular double-barrel submachine gun from the great imperial **Nelaka Arms Company**, employing caseless 5mm ammunition fired through a magic-based mechanism. Quite handy for dealing with targets that are too far for one to swing a blade at. With paired 2x10 round magazines, and a steady fire rate, it's enough to keep foes at bay with quick barrages. Additionally, due to its small caliber, it requires a smaller mana charge to remain operational.
 
 **Starting Spells:**
 
@@ -69,11 +69,11 @@ Specialized in melee combat, she knows how to most efficiently employ the strong
 
 ![portrait](docimg/zorou.png)
 
-Specialized in firearm combat, he's quite an expert with all sorts of guns, including some not of **Anarukon** manufacture. Certainly, he may be able to employ some rather unconventional weaponry too, if he's lucky enough to find some. His magic abilities are mostly focused on restoration and defensive spells. Out of all three he's the swiftest, but he's not very good with close combat.
+Specialized in firearm combat, he's quite an expert with all sorts of guns, including some not of **Anarukon** manufacture. Certainly, he may be able to employ some rather unconventional weaponry too, if he's lucky enough to find some. His magic abilities are mostly focused on restoration and defensive spells. Out of all three he's the swiftest, but he's not very good with close combat, and will have trouble handling large weapons.
 
 **Starting Weapons:**
 
- - **Sokana Long Auto-Rifle:** One of the weapons he personally built. Useful both for heated close to mid range firefights and also for long range sniping. 6.7mm caseless, 40-round box magazine, with both semi and full auto modes. Comes with a bayonet attachment, should you be in a hurry to deal with foes getting a bit too close for comfort.
+ - **Sokana Long Auto-Rifle:** One of the weapons he personally built. Useful both for heated close to mid range firefights and also for long range sniping. 6.7mm caseless, 40-round box magazine, with both semi and full auto modes. Comes with a bayonet attachment, should you be in a hurry to deal with foes getting a bit too close for comfort. The bayonet is normally retracted, but can quickly extend forwards for a deadly jab at the press of a button.
  - **2x Pronoxyte Dagger:** Two blades are better than one. Kept nicely in Zorou's garters for quick access, these deadly blades will make anyone wishing to get too close and personal regret their choice.
 
 **Starting Spells:**
@@ -108,7 +108,7 @@ Specialized in magic, they are well-versed in many different schools, allowing t
 
 As in any Souls-like (though this is more of a Souls-lite), there are three things to mainly keep track of: Your **Health**, **Stamina** and **Mana**.
 
-- **Health** slowly regenerates over time, but it can also be recovered by using various healing items and spells, as well as resting at certain safe zones. Food can also help boost regeneration. Your health drains as you take damage, and when it's all out, you die, simple as that.
+- **Health** can be recovered by using various healing items and spells, as well as resting at certain safe zones. Food can also help by providing some slow regeneration. Your health drains as you take damage, and when it's all out, you die, simple as that.
 - **Stamina** is recovered when idle. Simply stop moving or attacking and it'll refill on its own. There are also certain items that can make this recovery faster. Stamina is consumed by strenuous acts, such as dashing and dodging, melee attacks, firing guns, and casting certain spells. When it runs out, you'll be out of breath for a while, leaving you helpless against enemy attack.
 - **Mana** can be recovered with rest, certain foods, and potions that stimulate mana absorption. It is a natural energy gathered from the environment, but there are rich sources of it that can be tapped into. Mana is consumed when casting spells, and is also necessary for operating **Anarukon** firearms, as they require a mana charge for round ignition.
 
@@ -120,15 +120,21 @@ You are **Anarukon**. To you, death is merely a temporary setback, as you can si
 
 The body of the undying requires blood to heal itself, blood brimming with iron and essential nutrients. A lack of these causes the body's healing abilities to wane, and with time, would drive the individual into a maddening thirst for blood if not treated.
 
-Of course, you can keep yourself healthy by eating and drinking when needed, but there are also other methods by which you can enrich your blood, one of them being the valuable, but rare **Akashna Extract**: A nutritious beverage concocted with the fresh blood of a healthy **Akashna**. Do note however that the very thick stench of blood may attract unwanted attention when opened.
+You can keep yourself healthy by eating and drinking when needed, but there are also other methods by which you can enrich your blood, one of them being the valuable, but rare **Akashna Extract**: A nutritious beverage concocted with the fresh blood of a healthy **Akashna**. Do note however that the very thick stench of blood may attract unwanted attention when opened.
 
 Thinning of the blood, if untreated, will eventually result in the inability to regenerate, meaning you will no longer be able to fight, and your body will remain dead. In this case, not all is truly lost, as your immortal soul can force the body to scatter, allowing it to reform in a safer place and giving a chance for your companions to tend to your health.
+
+Of course, very lethal damage to your body such as, for example, being crushed to a pulp or exploding into pieces, will prevent you from regenerating, so that's also something else to watch out for.
 
 ### The Hub
 
 Your missions will take you all around various locales within Hell, but there will always be a hub where you can take a break, have a chat with your comrades, trade goods, have lunch, enjoy a bath together, get some sleep...
 
 While this safe haven may seem a bit small with just you and your squad around, do keep in mind that sometimes certain individuals you encounter throughout your adventures may stop by for a visit. Some might even stay and help around, set up shop, and so on. Despite the current forces in power, it's not like the civilian population rejects your kind.
+
+So, what's this again about bathing? Well, it is an **Anarukon** tradition for warriors to enjoy a warm bath both before and after a great battle. Doing so before relieves stress and raises the spirits so you're ready for anything, and doing so afterwards is simply a good way to wash off the blood of your enemies, as well as relaxing after such arduous work.
+
+And what about sleep? Well, you may find that over time, your performance might start to decrease. This is a sign of exhaustion, and while it can be mildly alleviated through resting, there will be a point where you actually do need to catch some Zs. Sleeping brings you back to peak performance, although the large jump in time has its consequences, as previously cleared areas will be repopulated *(but that just means you get more stuff to kill, right?)*.
 
 ### Missions
 
@@ -140,9 +146,11 @@ Some side missions might also open up by request of certain people you'll come a
 
 Upon leaving an area, rather than have to deal with several kilometers of travel on foot to the next one, you will be sent to the world map, where you can quickly move to other places you've unlocked. Each new exit you find from one area will open a new path to another. Make sure to explore thoroughly so you may find easy routes to all the various corners of Hell and make your journey throughout much easier.
 
-### Bonding
+### Companions
 
 Spending time with your companions is always a nice thing. Not only can you hang out with them in the hub, but you can also ask them to come along with you for your missions, should you find yourself shorthanded. Having friends around also allows you to share items. Just remember one thing: They also need the stuff, don't be greedy.
+
+While out in the field, they will fight alongside you, and try their best to catch up wherever you go. You can give them directions to stand guard / follow, target a specific foe, or even check up on their condition to see if they need healing or some specific resource. It's all about teamwork.
 
 ## Equipment
 
@@ -165,68 +173,5 @@ Two weapons can be carried at the same time, assigned to slots 2 and 3. Slot 1 a
 ### Items
 
 ### . . .
-
----
-
-## DLC Episode: A Witch's Demon Hunt
-
-Potential for an expansion is definitely there once the main game is done. This might or might not be done depending on the circumstances. A glimpse of what would be offered will be shown here.
-
-### The Story
-
-June of 2148, the **Demon Invasion** has reached its peak. Countless brave heroes are out there fighting back, repelling the invading forces. Of course, here in **Southern Ireland**, things couldn't be any worse. The rather incompetent local military hasn't been able to do much, and the government, in an unexpected turn, has decided to put its faith in the **Anarukon** population of their various cities. Warriors, witches, and many others have answered this call, seeing this as a chance to finally offer the nation who once treated them like monsters a very big slice of humble pie.
-
-### Rough Outline
-
-This one will be a bit more linear, I feel. A more traditional central hub with unlockable maps around it, or perhaps multiple hubs. Yeah, starting to sound Hexen-ish there, I think... The point is to explore various locations and their surroundings, obtaining key items that will allow you progress deeper and deeper into the epicenter of the London invasion. Each hub will end with a boss encounter, before proceeding to the next, until reaching the "final boss". All of this has yet to be decided, of course. It'd be best to leave it be until the base game is actually done.
-
-### Children of the Witch of London
-
-These three siblings are no strangers to battle, and you shall bear witness to their outstanding abilities.
-
-#### Adrian Knox
-
-The middle child, who has taken part in two of the fiercest wars the human world has ever seen, earning the title of **The Unkillable Britishman**. His strength is quite noteworthy, and he is quite proficient with the blade, along with hand to hand combat. Any magic skills, however, are nowhere to be seen with him, and he has no interest in learning.
-
-**Starting Weapons:**
-
- - **Machete:** A perfect instrument to cleave through the thick flesh of hellspawn. Built with high quality carbon steel, and sawed for extra cutting action.
- - **Boskin 1811:** A popular WW2 handgun, and a mainstay of **Adrian**'s collection as a memento of his time in the war. Chambered for .45 AVP, it's got some power for sure.
-
-**Starting Spells:**
-
- - **N/A:** Again, he has no intention of using magic.
-
-#### Ashley Knox
-
-The eldest child, the so-called **Stylish Witch of the West**. She is an expert with heavy firearms, as well as having excellent skills in alchemy and spellcasting. In addition, she can do all this while still looking as beautiful and stylish as ever.
-
-**Starting Weapons:**
-
- - **2x "Witch's Bride" Shotgun:** Once part of the personal collection of a former witch hunter, these two happily married lever-action shotguns have been rebranded by **Ashley** herself. Not that the owner would mind, as he's long since dead and buried... By her own hand. The shells fed into each of them are charged with potent fire and ice magic.
- - **Garrett M84 "Patriarch":** The all-popular beefy .50 OMG sniper rifle that everyone loves. Even the sound of it being fired is enough to strike fear in the enemy. Part of **Ashley**'s personal collection, usually kept in a neat display case in her bedroom. It definitely has seen some action, but she makes sure to keep it in mint condition. Unlike typical commercial models, this one has been modified for left-handed use.
-
-**Starting Spells:**
-
- - **Crimson Shard:** Puncturing shards of red gemstone with a poisonous effect.
- - **Zalya's Fire:** A form of wild pyromancy that not many can truly master. Call forth acidic flames that burn up targets from the inside.
- - **Cryotic Blast:** A basic cryomantic spell, but don't let that deceive you. **Ashley** has perfected her understanding of its potential to a point where she can easily unleash a deadly blast of gelid air capable of freezing targets in a wide range.
- - **Dark Edge:** Dark magic is generally unpopular due to its difficulty, and the potential detriments to one's perception by the public. This despite the fact it is one of the purest forms of spellcasting, and even one that the very deity that created magic is most fond of. A thin jet of cutting force that is said to practically split atoms in half. On impact, rather than actually cutting targets, it appears to cause a release of scalding plasma wherever it touches.
- - **Pale Wrath:** Unleashes a concentrated pulse of incandescent plasma, mowing down everything on its path.
-
-#### Viola Knox
-
-The youngest child, and self-proclaimed **Witch of Cats**. Master of summoning, her endless armies of fierce felines can trash even the mightiest foes in a matter of seconds. Her rather unorthodox clothing in addition allows her not just to have amplified spellcasting, but also grants great mobility.
-
-**Starting Weapons:**
-
- - **Z4 Casalli:** A supposedly cursed revolver. **Viola**'s skills with incantation allow her to imbue bullets with a soul-seeking capability, letting them steer towards nearby foes.
-
-**Starting Spells:**
-
- - **Umbral Spear:** Summons a piercing spear of darkness that impales targets with extreme prejudice.
- - **Umbral Catalyst:** Summons bombs of darkness that blast targets to bits in a wide area.
- - **Umbral Cloak:** Summons a mantle of darkness that saps life and mana from targets.
- - **Umbral Stampede:** Calls forth a swarm of spectral cats, which will claw and bite targets to death.
 
 ---
