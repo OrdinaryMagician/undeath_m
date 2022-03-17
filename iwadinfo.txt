@@ -1,6 +1,7 @@
 IWad
 {
 	Name = "UNDEATH"
+	DiscordAppID = "953994775521001492"
 	AutoName = "undeathgame"
 	Game = "Doom"
 	Config = "UNDEATH"

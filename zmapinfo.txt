@@ -44,7 +44,7 @@ Skill defaultskill
 	DefaultSkill
 }
 
-Map TITLEMAP "UNDEATH Title Map"
+Map TITLEMAP "Title Map"
 {
 	Music = ""
 	EventHandlers = "UnTitleHandler"
