@@ -40,7 +40,7 @@ If possible, you may also attempt to locate **Akedas Aximal**, the right hand ma
 
 ## The Characters
 
-There are a number of characters you can choose at the start of a new game, each with different specialties and stats. Whichever you choose of each group to play as, the others will become NPCs you can interact with throughout the game.
+There's a variety of characters you can choose at the start of a new game, each with different specialties and stats. Whichever you choose from the group to play as, the others will become NPCs you can interact with throughout the game.
 
 ### Disciples of Veryakhai
 
@@ -61,7 +61,6 @@ Specialized in melee combat, she knows how to most efficiently employ the strong
 
  - **Ember Flash:** A small burst of fire from one's open palm. Semi-short range, and more damaging the closer one is to the target.
  - **Eruption:** A staple of the *"explosion magic"* sub-school of pyromancy. Focusing on a single nearby spot, a potent blast will be triggered, sending nearby targets flying into the air, covered in flames.
- - **Stone Skin:** A defensive spell that temporarily coats the wearer's skin with stony scales, improving resistance at the cost of decreased mobility.
  - **Red Sun:** One of the many revolutionary spells of the **Beast-Magus**. A raging inferno conjured into a self-stabilized sphere, ready to be thrown into the face of whoever is unlucky to deserve such a nasty surprise.
  - **Inferno Whirl:** A potent area denial pyromancy, summoning a conjunction of flame whirls that dance around the caster, spreading outwards in the process.
 
@@ -92,7 +91,7 @@ Specialized in magic, they are well-versed in many different schools, allowing t
 
 **Starting Weapons:**
 
- - **N/A:** They don't particularly see any usefulness in weaponry, so all you'll have as a fallback is raw hand-to-hand combat.
+ - **N/A:** Since their spells are useful enough, they don't see any usefulness in bringing weapons along. You'll have to find some in the field that strike their fancy.
 
 **Starting Spells:**
 
@@ -158,17 +157,17 @@ While each character has a set of starting items and weaponry, more can be found
 
 One important detail to keep in mind about this **Crystallized Ardent**, however, is that should you die and scatter yourself, any of it you're holding will be lost, as the process causes it to return to its natural state and dissipate into the air. It is not lost forever, though, as any enemies nearby might absorb it in their bodies, often raising from the dead and allowing you to recover it as you slay them again.
 
-### Spells
-
-The very deity that created magic billions of years ago is often quoted with saying *"anyone with a soul can cast magic, but only those with a loving heart can truly **USE** it"*. Magic is as ubiquitous in the daily lives of the **Anarukon** as is technology, serving as yet another tool at their disposal to make things easier. On the field, each character has a lineup of spells they can employ, each consuming a certain amount of mana in the process. Still, more spells can be obtained during the mission, if you can find someone or something to learn them from, and they belong to the school you specialize in.
-
-Spells are equipped as would be weapons, wherein primary fire would perform a straight cast, while secondary fire would allow you to charge up a stronger version of the spell. Up to seven spells can be attuned at the same time, taking up slots 4 through 0.
-
 ### Weapons
 
-Since your bare hands aren't usually enough, weapons are of course quite important to have too. Melee weapons are the simplest to use, with primary fire being employed for quick, weaker attacks and secondary for slower, stronger swings. Firearms, on the other hand, require ammunition (and in some cases mana), which can generally be found scattered on the field or purchased from merchants. In certain cases, it's also possible to craft ammunition from raw materials (easy for **Anarukon** weaponry, as they're simple metal projectiles, but more complicated for other weapons, such as those of human manufacture). Firearms are operated with primary fire, while secondary allows you to use their sights for more precise aiming.
+Since your bare hands aren't usually enough, weapons are of course quite important to have too. Melee weapons are the simplest to use, with primary fire being employed for quick, weaker attacks and secondary for slower, stronger swings. Firearms, on the other hand, require ammunition (and in some cases mana), which can generally be found scattered on the field or purchased from merchants. In certain cases, it's also possible to craft ammunition from raw materials (easy for **Anarukon** weaponry, as they're simple metal projectiles, but more complicated for other weapons, such as those of human manufacture). Firearms are operated with primary fire, with secondary fire having a special function depending on the weapon (e.g.: mana pool refilling on magic firearms).
 
-Two weapons can be carried at the same time, assigned to slots 2 and 3. Slot 1 allows you to fall back to simple hand-to-hand melee at any moment, should you wish to.
+There is a limit on carried weapons depending on the character, but most of the time you will start with two, assigned to slots 2 and 3. Slot 1 allows you to fall back to simple hand-to-hand melee at any moment, should you wish to.
+
+### Spells
+
+The very deity that created magic billions of years ago is often quoted with saying *"anyone with a soul can cast magic, but only those with a loving heart can truly **USE** it"*. Magic is as ubiquitous in the daily lives of the **Anarukon** as is technology, serving as yet another tool at their disposal to make things easier. On the field, each character has a lineup of spells they can employ, each consuming a certain amount of mana in the process. These spells are effectively *"integrated"* into them through years of learning and practice, and remain unchangeable throughout the whole game.
+
+Spells are equipped separately from weapons, and are cast through a dedicated button. A simple tap will perform a straight cast, while holding allows you to charge up a stronger version of the spell. Each character has a set number of spell slots, balanced against their weapon slot count, with both adding up to 10.
 
 ### Items
 

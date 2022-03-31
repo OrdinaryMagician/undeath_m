@@ -16,7 +16,7 @@ These three siblings are no strangers to battle, and you shall bear witness to t
 
 #### Adrian Knox
 
-The middle child, who has taken part in two of the fiercest wars the human world has ever seen, earning the title of **The Unkillable Britishman**. His strength is quite noteworthy, and he is quite proficient with the blade, along with hand to hand combat. Any magic skills, however, are nowhere to be seen with him, and he has no interest in learning.
+The middle child, who has taken part in two of the fiercest wars the human world has ever seen, earning the title of **The Unkillable Britishman**. His strength is quite noteworthy, and he is quite proficient with the blade, along with hand to hand combat. Any magic skills, however, are nowhere to be seen with him, and he has no interest in learning. To compensate, he's capable of carrying a whole arsenal with him, becoming a one-man army.
 
 **Starting Weapons:**
 
