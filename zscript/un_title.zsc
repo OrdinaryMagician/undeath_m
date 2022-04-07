@@ -6,9 +6,9 @@ Class UnTitleHandler : EventHandler
 
 	override void WorldLoaded( WorldEvent e )
 	{
-		Shader.SetEnabled(players[consoleplayer],"undeathtitle1",true);
-		Shader.SetEnabled(players[consoleplayer],"undeathtitle2",true);
-		Shader.SetEnabled(players[consoleplayer],"undeathtitle3",true);
+		PPShader.SetEnabled("undeathtitle1",true);
+		PPShader.SetEnabled("undeathtitle2",true);
+		PPShader.SetEnabled("undeathtitle3",true);
 	}
 	override void WorldTick()
 	{
@@ -27,8 +27,8 @@ Class UnTitleHandler : EventHandler
 	{
 		if ( level.maptime < (10.*GameTicRate) )
 			Screen.Dim("Black",1.-(level.maptime+e.FracTic)/(10.*GameTicRate),0,0,Screen.GetWidth(),Screen.GetHeight());
-		Shader.SetUniform1f(players[consoleplayer],"undeathtitle1","timer",(level.maptime+e.FracTic)/GameTicRate-13.);
-		Shader.SetUniform1f(players[consoleplayer],"undeathtitle3","timer",(level.maptime+e.FracTic)/GameTicRate);
+		PPShader.SetUniform1f("undeathtitle1","timer",(level.maptime+e.FracTic)/GameTicRate-13.);
+		PPShader.SetUniform1f("undeathtitle3","timer",(level.maptime+e.FracTic)/GameTicRate);
 		double alf = clamp(((level.maptime+e.FracTic)/GameTicRate)-1,0.,1.);
 		alf *= 1.-clamp(((level.maptime+e.FracTic)/GameTicRate)-6,0.,1.);
 		int ht = (bigfont.GetHeight()+2+smallfont.GetHeight())/2;
