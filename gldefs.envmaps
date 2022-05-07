@@ -1,0 +1,208 @@
+HardwareShader Texture "models/envmap/blodenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/blodrim.png"
+	Define "RIM_LIGHTING"
+	Define "ENVFACT" = ".5"
+	Define "RIMFACT" = "1.5"
+	Define "RIMSTEP" = ".35"
+}
+HardwareShader Texture "models/envmap/bluenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/blurim.png"
+	Define "RIM_LIGHTING"
+}
+HardwareShader Texture "models/envmap/darkenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/darkrim.png"
+	Define "RIM_LIGHTING"
+	Define "ENVFACT" = ".3"
+	Define "RIMFACT" = "1.1"
+}
+HardwareShader Texture "models/envmap/dekaenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/dekarim.png"
+	Define "RIM_LIGHTING"
+}
+HardwareShader Texture "models/envmap/ekaenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/ekarim.png"
+	Define "RIM_LIGHTING"
+}
+HardwareShader Texture "models/envmap/glassenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/glassrim.png"
+	Define "RIM_LIGHTING"
+	Define "ENVFACT" = ".5"
+}
+HardwareShader Texture "models/envmap/glss2env.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/glss2rim.png"
+	Define "RIM_LIGHTING"
+	Define "ENVFACT" = ".5"
+}
+HardwareShader Texture "models/envmap/glss3env.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/glss3rim.png"
+	Define "RIM_LIGHTING"
+	Define "ENVFACT" = ".5"
+}
+HardwareShader Texture "models/envmap/glss4env.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/glss4rim.png"
+	Define "RIM_LIGHTING"
+	Define "ENVFACT" = ".5"
+}
+HardwareShader Texture "models/envmap/glss5env.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/glss5rim.png"
+	Define "RIM_LIGHTING"
+	Define "ENVFACT" = ".5"
+}
+HardwareShader Texture "models/envmap/glss6env.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/glss6rim.png"
+	Define "RIM_LIGHTING"
+	Define "ENVFACT" = ".5"
+}
+HardwareShader Texture "models/envmap/goldenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/goldrim.png"
+	Define "RIM_LIGHTING"
+}
+HardwareShader Texture "models/envmap/greenenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/greenrim.png"
+	Define "RIM_LIGHTING"
+}
+HardwareShader Texture "models/envmap/iceenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/icerim.png"
+	Define "RIM_LIGHTING"
+	Define "ENVFACT" = ".6"
+}
+HardwareShader Texture "models/envmap/kinyenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/kinyrim.png"
+	Define "RIM_LIGHTING"
+	Define "RIMFACT" = "1.5"
+	Define "RIMSTEP" = "0."
+}
+HardwareShader Texture "models/envmap/lavaenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/lavarim.png"
+	Define "RIM_LIGHTING"
+	Define "RIMFACT" = "1.5"
+	Define "RIMSTEP" = ".35"
+}
+HardwareShader Texture "models/envmap/leadenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/leadrim.png"
+	Define "RIM_LIGHTING"
+}
+HardwareShader Texture "models/envmap/nokrenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/nokrrim.png"
+	Define "RIM_LIGHTING"
+	Define "RIMFACT" = "1.5"
+	Define "RIMSTEP" = "0."
+}
+HardwareShader Texture "models/envmap/nukenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/nukrim.png"
+	Define "RIM_LIGHTING"
+	Define "RIMSTEP" = ".25"
+}
+HardwareShader Texture "models/envmap/ockoenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/ockorim.png"
+	Define "RIM_LIGHTING"
+}
+HardwareShader Texture "models/envmap/pronoenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/pronorim.png"
+	Define "RIM_LIGHTING"
+}
+HardwareShader Texture "models/envmap/puroenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/purorim.png"
+	Define "RIM_LIGHTING"
+}
+HardwareShader Texture "models/envmap/purpenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/purprim.png"
+	Define "RIM_LIGHTING"
+}
+HardwareShader Texture "models/envmap/redenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/redrim.png"
+	Define "RIM_LIGHTING"
+}
+HardwareShader Texture "models/envmap/reflenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/reflrim.png"
+	Define "RIM_LIGHTING"
+}
+HardwareShader Texture "models/envmap/rfl2env.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/rfl2rim.png"
+	Define "RIM_LIGHTING"
+}
+HardwareShader Texture "models/envmap/silverenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/silverrim.png"
+	Define "RIM_LIGHTING"
+}
+HardwareShader Texture "models/envmap/tarenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/tarrim.png"
+	Define "RIM_LIGHTING"
+	Define "RIMFACT" = "1.5"
+	Define "RIMSTEP" = ".25"
+}
+HardwareShader Texture "models/envmap/telenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/telrim.png"
+	Define "RIM_LIGHTING"
+}
+HardwareShader Texture "models/envmap/watrenv.png"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/watrrim.png"
+	Define "RIM_LIGHTING"
+}
+HardwareShader Texture "ERRORENV"
+{
+	Shader "shaders/glsl/Envmap.fp"
+	Texture "rimtex" "models/envmap/redrim.png"
+	Define "RIM_LIGHTING"
+	Define "AMBIENT_GLOW"
+}

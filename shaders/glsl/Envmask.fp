@@ -15,14 +15,14 @@ void SetupMaterial( inout Material mat )
 {
 	vec4 base = getTexel(vTexCoord.st);
 	float mask = texture(masktex,vTexCoord.st).x;
-	vec3 norm = normalize(vWorldNormalOrig.xyz);
+	vec3 norm = normalize(vWorldNormal.xyz);
 	vec3 eye = normalize(uCameraPos.xyz-pixelpos.xyz);
 	vec3 rvec = normalize(reflect(eye,norm));
 	vec2 uv = vec2(atan(rvec.z,rvec.x)*RECIPROCAL_PI2+.5,asin(rvec.y)*RECIPROCAL_PI2+.5);
 	vec2 uv2 = vec2(atan(rvec.z,abs(rvec.x))*RECIPROCAL_PI2+.5,asin(rvec.y)*RECIPROCAL_PI2+.5);
 	vec3 envcol = textureGrad(envtex,uv,dFdx(uv2),dFdy(uv2)).rgb*ENVFACT;
 #ifdef RIM_LIGHTING
-	float rim = smoothstep(RIMSTEP,1.,1.-clamp(abs(dot(eye,norm)),0.,1.));
+	float rim = smoothstep(RIMSTEP,1.,1.-clamp(dot(eye,norm),0.,1.));
 	vec3 rimcol = texture(rimtex,vec2(.25+.5*rim,.5)).rgb;
 	envcol = mix(envcol,rimcol,rim*RIMFACT);
 #endif

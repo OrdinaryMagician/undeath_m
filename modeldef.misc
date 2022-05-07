@@ -3,7 +3,7 @@ Model "Unknown"
 	Path "models"
 
 	Model 0 "extra/IAmError_d.3d"
-	Skin 0 "matcap/errormap.png"
+	Skin 0 "ERRORENV"
 	Scale 0.0625 0.0625 0.0625
 	AngleOffset 90
 	ZOffset 32

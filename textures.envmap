@@ -1,0 +1,5 @@
+// duplicate envmaps for special materials
+Texture "ERRORENV", 1024, 1024
+{
+	Patch "models/envmap/redenv.png", 0, 0
+}
