@@ -24,19 +24,18 @@ Your objective, warrior, is to end the lives of each and every one of them. As a
 
 ## The Hit List
 
-Your mission is to slay the nine archdemon generals responsible for the coup of 2145, each and every single one of them, without exception. Whatever they may try to get away, you must bring swift death to them.
+Your mission is to slay the nine archdemon generals responsible for the coup of 2145, each and every single one of them, without exception. Whatever they may try to get away, you must bring swift death to them. If possible, you may also attempt to locate **Akedas Aximal**, the right hand man and personal advisor of the leading general, and dispose of him too. No one knows of his actual hiding place since the onslaught of the human soldier and the heroic machine, so it may be necessary to conduct a thorough investigation. It's assumed that he is the true mastermind behind the coup, and all events since.
 
-1. **Berias Ysharan**, the **Lustful Malefactor**
-2. **Destora Arathon**, the **Blood Dancer**
-3. **Urthura Vexamal**, the **Beacon of Scorn**
-4. **Gyeran Rashaz**, the **Flesh Servant**
-5. **Vera Akerastora**, the **Scion of Gluttony**
-6. **Kaume Irishtanar**, the **Lord of Deceit**
-7. **Taeron Yraisamal**, the **Betrayer of Faith**
-8. **Thaar Adarion**, the **Despot Knight**
-9. **Erebus Arthamuz**, the **Decadent Conqueror**
-
-If possible, you may also attempt to locate **Akedas Aximal**, the right hand man and personal advisor of the leading general, and dispose of him too. No one knows of his actual hiding place since the onslaught of the human soldier and the heroic machine, so it may be necessary to conduct a thorough investigation.
+1. **Berias Ysharan**, the **Lustful Malefactor**<br/>A lord among impkind, he thrives in the rape and pillage of various frontier settlements to keep them *"under full submission"*. Last seen scouring the southern **Wretched Slough** for escaped slaves. The despicable bastard must pay.
+2. **Destora Arathon**, the **Blood Dancer**<br/>Main strategist and trainer of the bestial armies of Hell. The fiercest of nobles serve as her devout followers, serving to bolster the main line of defense for her impregnable fortress, the so-called **Malevolent Keep**. Let her death signify retribution for the millions dead at the hands of her armies.
+3. **Urthura Vexamal**, the **Beacon of Scorn**<br/>A renegade, riddled with contempt for her own kind, who has somehow managed to secure a position as general due to her sheer cruelty. Rather than the common deity of the usurpers, she appears to be a follower of the so-called **Hand of Hate**. She guards **Ethrael's Pass**, one of the main bridges connecting the southern island to the capital. She may prove to be a formidable foe.
+4. **Gyeran Rashaz**, the **Flesh Servant**<br/>As the wife of **General Erebus**, she employs her privileged position to get everything she desires, whenever she desires, no matter the cost. It is implied, however, that this has caused their relationship to weaken. Holds the keys to the inner city, to be shared only with those who earn her respect. There is no forgiveness for her own crimes.
+5. **Vera Akerastora**, the **Scion of Gluttony**<br/>A former noble archdemon twisted by insatiable desires. Oversees the spawning grounds southeast of the **Malevolent Keep**, where he regularly indulges in a *"cut"* of the production. Sate his hunger with the taste of death.
+6. **Kaume Irishtanar**, the **Lord of Deceit**<br/>Baron of **House Irishtanar**. Addicted to seduction and deceit, he led the assassination of the rival **House Valathor** in the frontier town of **Iskar**, where he remains to ensure the exiled royal family stays under control. He must pay for the crimes against his own kind.
+7. **Taeron Yraisamal**, the **Betrayer of Faith**<br/>A shameless propagandist who, despite not buying into the worship of the so-called **Tyrant** god, still chose to take part in the coup due to a seething hatred for **First Matriarch Lilith**. He has taken over the **Cathedral of Erai**, from within his lies emanate and spread out throughout the land. He must be silenced.
+8. **Thaar Adarion**, the **Despot Knight**<br/>The most faithful follower of **General Erebus**, said to even envy his own wife, as he sees himself as a far worthier companion. As the self-identified *"finest warrior of Hell"*, he stands at the very gates of the **Spire of Dis**, as sworn protector of the grand general. He won't go down easily.
+9. **Erebus Arthamuz**, the **Decadent Conqueror**<br/>Former celebrity turned military leader, there is little that **Erebus** has accomplished all by himself. Still, despite his reliance on others to do his dirty work, he is not to be underestimated. As descendant of the legendary **Archlord Thamuz**, he is one of the last living heirs of *"true heroic blood"*, and claims to have been chosen by the **Tyrant** as the true king of demonkind in this universe. Make him realize how wrong he is.
+10. **Akedas Aximal**, the **Grand Schemer**<br/>An ancient demon, said to have personally witnessed the inception of demonkind at the hands of the **Xevetha**. Jaded by a lengthy experience of the *"downfall"* of this realm, he himself set the stage for the uprising, and oversaw every single movement up to the invasion of 2148. It appears that he's distanced himself from the generals, focused on other plans. His location is unknown, but disposing of him should be of utmost importance. There is no knowing what he may do next.
 
 ## The Characters
 
@@ -52,12 +51,12 @@ Three brave warriors, bonded by their many adventures together. All trained unde
 
 Specialized in melee combat, she knows how to most efficiently employ the strongest of bladed weapons. Her skills with magic are focused on pyromancy, the field she excels at. Due to her large stature, she may have trouble moving around, but this is complemented with much heftier resistances, basically making her the tank option. She favors larger weapons, as anything too small will feel awkward to her.
 
-**Starting Weapons:**
+**Weapons:**
 
  - **Pronoxyte Claymore:** A large blade of hard metal, normally wielded with both hands, but **Sada** has no trouble using it one-handed. Like pretty much all **Anarukon** melee weapons it is made of **Pronoxyte**, a strong, hard metal that is also employed in electronics due to its high conductivity and heat resistance. In contact with an open wound, it causes a numbing effect, leaving foes in the dark about the fact they've been cut down and are bleeding out, although usually, with a weapon this large, they'll be quick to notice their whole body has been cleaved in half.
  - **Nelaka Xei PDW:** A popular double-barrel submachine gun from the great imperial **Nelaka Arms Company**, employing caseless 5mm ammunition fired through a magic-based mechanism. Quite handy for dealing with targets that are too far for one to swing a blade at. With paired 2x10 round magazines, and a steady fire rate, it's enough to keep foes at bay with quick barrages. Additionally, due to its small caliber, it requires a smaller mana charge to remain operational.
 
-**Starting Spells:**
+**Spells:**
 
  - **Ember Flash:** A small burst of fire from one's open palm. Semi-short range, and more damaging the closer one is to the target.
  - **Eruption:** A staple of the *"explosion magic"* sub-school of pyromancy. Focusing on a single nearby spot, a potent blast will be triggered, sending nearby targets flying into the air, covered in flames.
@@ -70,12 +69,12 @@ Specialized in melee combat, she knows how to most efficiently employ the strong
 
 Specialized in firearm combat, he's quite an expert with all sorts of guns, including some not of **Anarukon** manufacture. Certainly, he may be able to employ some rather unconventional weaponry too, if he's lucky enough to find some. His magic abilities are mostly focused on restoration and defensive spells. Out of all three he's the swiftest, but he's not very good with close combat, and will have trouble handling large weapons.
 
-**Starting Weapons:**
+**Weapons:**
 
  - **Sokana Long Auto-Rifle:** One of the weapons he personally built. Useful both for heated close to mid range firefights and also for long range sniping. 6.7mm caseless, 40-round box magazine, with both semi and full auto modes. Comes with a bayonet attachment, should you be in a hurry to deal with foes getting a bit too close for comfort. The bayonet is normally retracted, but can quickly extend forwards for a deadly jab at the press of a button.
  - **2x Pronoxyte Dagger:** Two blades are better than one. Kept nicely in Zorou's garters for quick access, these deadly blades will make anyone wishing to get too close and personal regret their choice.
 
-**Starting Spells:**
+**Spells:**
 
  - **Heal:** A simple spell to close wounds and regain vitality, if only a little. Immediately stops any bleeding and regains some lost health. If you're currently looking at a companion, you will cast it on them, rather than yourself.
  - **Cure Poison:** A simple spell to purge toxins from the body. Has the unfortunate consequence of also eliminating any buffs one may get from consuming alcoholic drinks. Can also be casted on companions. Very potent toxic effects require a charged cast to fully heal.
@@ -89,11 +88,11 @@ Specialized in firearm combat, he's quite an expert with all sorts of guns, incl
 
 Specialized in magic, they are well-versed in many different schools, allowing them to perform some of the most powerful spells known. From all forms of elemental magic, to even harnessing time manipulation, nothing escapes them. They're the weakest physically, but this is compensated by a much larger mana pool. Their small frame allows for better mobility, too, but limits the kinds of conventional weapons they may be able to use. In addition, they do know some very potent spells, which they've mastered and refined over the span of decades, however, they can't be bothered to learn any new spells, so those are all they have.
 
-**Starting Weapons:**
+**Weapons:**
 
  - **N/A:** Since their spells are useful enough, they don't see any usefulness in bringing weapons along. You'll have to find some in the field that strike their fancy.
 
-**Starting Spells:**
+**Spells:**
 
  - **God Slash:** A potent spell that cleaves through anything. Sharper than any blade, it can quickly dispose of large groups of enemies at a short range. Useful to clear a path when surrounded.
  - **Dark Entanglement:** Thorns of dark energy that coil around enemies, bleeding them dry.

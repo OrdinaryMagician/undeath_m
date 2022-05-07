@@ -18,12 +18,12 @@ These three siblings are no strangers to battle, and you shall bear witness to t
 
 The middle child, who has taken part in two of the fiercest wars the human world has ever seen, earning the title of **The Unkillable Britishman**. His strength is quite noteworthy, and he is quite proficient with the blade, along with hand to hand combat. Any magic skills, however, are nowhere to be seen with him, and he has no interest in learning. To compensate, he's capable of carrying a whole arsenal with him, becoming a one-man army.
 
-**Starting Weapons:**
+**Weapons:**
 
  - **Machete:** A perfect instrument to cleave through the thick flesh of hellspawn. Built with high quality carbon steel, and sawed for extra cutting action.
  - **Boskin 1811:** A popular WW2 handgun, and a mainstay of **Adrian**'s collection as a memento of his time in the war. Chambered for .45 AVP, it's got some power for sure.
 
-**Starting Spells:**
+**Spells:**
 
  - **N/A:** Again, he has no intention of using magic.
 
@@ -31,12 +31,12 @@ The middle child, who has taken part in two of the fiercest wars the human world
 
 The eldest child, the so-called **Stylish Witch of the West**. She is an expert with heavy firearms, as well as having excellent skills in alchemy and spellcasting. In addition, she can do all this while still looking as beautiful and stylish as ever.
 
-**Starting Weapons:**
+**Weapons:**
 
  - **2x "Witch's Bride" Shotgun:** Once part of the personal collection of a former witch hunter, these two happily married lever-action shotguns have been rebranded by **Ashley** herself. Not that the owner would mind, as he's long since dead and buried... By her own hand. The shells fed into each of them are charged with potent fire and ice magic.
  - **Garrett M84 "Patriarch":** The all-popular beefy .50 OMG sniper rifle that everyone loves. Even the sound of it being fired is enough to strike fear in the enemy. Part of **Ashley**'s personal collection, usually kept in a neat display case in her bedroom. It definitely has seen some action, but she makes sure to keep it in mint condition. Unlike typical commercial models, this one has been modified for left-handed use.
 
-**Starting Spells:**
+**Spells:**
 
  - **Crimson Shard:** Puncturing shards of red gemstone with a poisonous effect.
  - **Zalya's Fire:** A form of wild pyromancy that not many can truly master. Call forth acidic flames that burn up targets from the inside.
@@ -48,11 +48,11 @@ The eldest child, the so-called **Stylish Witch of the West**. She is an expert 
 
 The youngest child, and self-proclaimed **Witch of Cats**. Master of summoning, her endless armies of fierce felines can trash even the mightiest foes in a matter of seconds. Her rather unorthodox clothing in addition allows her not just to have amplified spellcasting, but also grants great mobility.
 
-**Starting Weapons:**
+**Weapons:**
 
  - **Z4 Casalli:** A supposedly cursed revolver. **Viola**'s skills with incantation allow her to imbue bullets with a soul-seeking capability, letting them steer towards nearby foes.
 
-**Starting Spells:**
+**Spells:**
 
  - **Umbral Spear:** Summons a piercing spear of darkness that impales targets with extreme prejudice.
  - **Umbral Catalyst:** Summons bombs of darkness that blast targets to bits in a wide area.
