@@ -20,7 +20,7 @@ void SetupMaterial( inout Material mat )
 	vec2 uv2 = vec2(atan(rvec.z,abs(rvec.x))*RECIPROCAL_PI2+.5,asin(rvec.y)*RECIPROCAL_PI2+.5);
 	vec3 envcol = textureGrad(tex,uv,dFdx(uv2),dFdy(uv2)).rgb*ENVFACT;
 #ifdef RIM_LIGHTING
-	float rim = smoothstep(RIMSTEP,1.,1.-clamp(dot(eye,norm),0.,1.));
+	float rim = smoothstep(RIMSTEP,1.,1.-abs(dot(eye,norm)));
 	vec3 rimcol = texture(rimtex,vec2(.25+.5*rim,.5)).rgb;
 	envcol = mix(envcol,rimcol,rim*RIMFACT);
 #endif
