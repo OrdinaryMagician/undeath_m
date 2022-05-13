@@ -99,7 +99,7 @@ Specialized in magic, they are well-versed in many different schools, allowing t
  - **Damnation:** A potent burst of cursed energy. Leaves clouds of blackened smoke that sap life away from anything they touch.
  - **Unearthed Magic:** A pillar of blue flame springs forth and bathes everything around it in magic fire until it hits a wall.
  - **Master Flare:** A lethal blast of wild magic, comparable to a miniature star in potency.
- - **Monarch's Wrath:** A defensive *"personal space cleanser"*, releasing a geyser of scorching plasma that pushes away all nearby targets, while preventing any harm to the caster.
+ - **Monarch's Fury:** A defensive *"personal space cleanser"*, releasing a geyser of scorching plasma that pushes away all nearby targets, while preventing any harm to the caster.
  - **Chronic Halt:** One of the most difficult chronomantic spells. Causes targets to be trapped in stasis for several seconds, halting all their motions. Ineffective on larger targets unless charged.
 
 ## Gameplay

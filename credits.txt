@@ -1,4 +1,4 @@
-Marisa Kirisame — Scripting, art, modeling, mapping, shaders
+Marisa the Magician — Scripting, art, modeling, mapping, shaders
 BouncyTEM — Music
 
 Third party libraries and assets:

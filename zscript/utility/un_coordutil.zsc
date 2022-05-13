@@ -3,7 +3,7 @@
    Reproduces the old UnrealScript Get(Un)Axes functions, providing XYZ axis
    vectors relative to an euler rotation (defaults to left-handed coords).
 
-   Copyright (c)2018-2021 Marisa Kirisame, UnSX Team
+   Copyright (c)2018-2022 Marisa the Magician, UnSX Team
 
    Permission is hereby granted, free of charge, to any person obtaining a copy
    of this software and associated documentation files (the "Software"), to
