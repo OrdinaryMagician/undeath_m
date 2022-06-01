@@ -88,7 +88,7 @@ Class UnPlayerMenu : ListMenu
 	Array<BrokenLines> traits, stats, bios;
 	double fact, fact2, fact3;
 	int prev, part, ppart;
-	transient uint prevms;
+	transient double prevms;
 
 	override void Init( Menu parent, ListMenuDescriptor desc )
 	{
@@ -113,7 +113,7 @@ Class UnPlayerMenu : ListMenu
 			str = StringTable.Localize("$BIO_"..PlayerClasses[param].type.GetClassName());
 			bios[param] = SmallFont2.BreakLines(str,400);
 		}
-		prevms = MSTime();
+		prevms = MSTimeF();
 	}
 
 	override bool MenuEvent( int mkey, bool fromcontroller )
@@ -216,7 +216,7 @@ Class UnPlayerMenu : ListMenu
 	{
 		if ( prevms )
 		{
-			double frametime = (MSTime()-prevms)/1000.;
+			double frametime = (MSTimeF()-prevms)/1000.;
 			double theta = clamp(8.*frametime,0.,1.); // naive, but whatever
 			fact = fact*(1.-theta);
 			fact2 = fact2*(1.-theta);
@@ -230,7 +230,7 @@ Class UnPlayerMenu : ListMenu
 		if ( mDesc.mSelectedItem == -1 )
 		{
 			Menu.Drawer();
-			prevms = MSTime();
+			prevms = MSTimeF();
 			return;
 		}
 		let ci = mDesc.mItems[mDesc.mSelectedItem];
@@ -398,7 +398,7 @@ Class UnPlayerMenu : ListMenu
 			}
 		}
 		Menu.Drawer();
-		prevms = MSTime();
+		prevms = MSTimeF();
 	}
 }
 
@@ -491,7 +491,7 @@ Class ListMenuItemUnTextItemM : ListMenuItemSelectable
 	int mColor;
 	int mColorSelected;
 	double selfade;
-	transient uint prevms;
+	transient double prevms;
 
 	void Init( ListMenuDescriptor desc, String text, String hotkey, Name child, int param = 0 )
 	{
@@ -501,7 +501,7 @@ Class ListMenuItemUnTextItemM : ListMenuItemSelectable
 		mColor = desc.mFontColor;
 		mColorSelected = desc.mFontcolor2;
 		mHotkey = hotkey.GetNextCodePoint(0);
-		prevms = MSTime();
+		prevms = MSTimeF();
 	}
 
 	void InitDirect( double x, double y, int height, int hotkey, String text, Font font, int color, int color2, Name child, int param = 0 )
@@ -512,14 +512,14 @@ Class ListMenuItemUnTextItemM : ListMenuItemSelectable
 		mColor = color;
 		mColorSelected = color2;
 		mHotkey = hotkey;
-		prevms = MSTime();
+		prevms = MSTimeF();
 	}
 
 	override void Draw( bool selected, ListMenuDescriptor desc )
 	{
 		if ( prevms )
 		{
-			double frametime = (MSTime()-prevms)/1000.;
+			double frametime = (MSTimeF()-prevms)/1000.;
 			// naive, but whatever
 			if ( selected )
 			{
@@ -553,6 +553,6 @@ Class ListMenuItemUnTextItemM : ListMenuItemSelectable
 			UnUtility.StripColor(text);	// full tint when selected, ignore color tags
 			Screen.DrawText(mFont,mColorSelected,x,y,text,DTA_VirtualWidth,w,DTA_VirtualHeight,h,DTA_FullscreenScale,FSMode_ScaleToFit43,DTA_Alpha,selfade);
 		}
-		prevms = MSTime();
+		prevms = MSTimeF();
 	}
 }

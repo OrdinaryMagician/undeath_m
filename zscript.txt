@@ -15,14 +15,14 @@ version "4.8"
 // base code
 #include "zscript/un_common.zsc"
 #include "zscript/un_handler.zsc"
-#include "zscript/un_statichandler.zsc""
+#include "zscript/un_statichandler.zsc"
 #include "zscript/un_player.zsc"
 // handler code
 // menu code
 #include "zscript/menu/un_title.zsc"
 #include "zscript/menu/un_menus.zsc"
 // hud
-#include "zscript/hud/un_hud.zsc
+#include "zscript/hud/un_hud.zsc"
 // items
 // weapons
 // monsters
