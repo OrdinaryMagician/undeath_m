@@ -8,6 +8,7 @@ Class UnMessageBox : MessageBoxMenu
 		destWidth = CleanWidth_1;
 		destHeight = CleanHeight_1;
 		mMessage = textfont.BreakLines(Stringtable.Localize(message),400);
+		Animated = true;
 	}
 
 	override void Drawer()
@@ -93,6 +94,7 @@ Class UnPlayerMenu : ListMenu
 	override void Init( Menu parent, ListMenuDescriptor desc )
 	{
 		Super.Init(parent,desc);
+		Animated = true;
 		portraits.Resize(PlayerClasses.Size());
 		traits.Resize(PlayerClasses.Size());
 		stats.Resize(PlayerClasses.Size());
@@ -404,6 +406,12 @@ Class UnPlayerMenu : ListMenu
 
 Class UnListMenu : ListMenu
 {
+	override void Init( Menu parent, ListMenuDescriptor desc )
+	{
+		Super.Init(parent,desc);
+		Animated = true;
+	}
+
 	override bool MouseEvent( int type, int x, int y )
 	{
 		if ( mDesc.DisplayWidth() != ListMenuDescriptor.CleanScale )

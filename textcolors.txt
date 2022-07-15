@@ -1,0 +1,190 @@
+// desaturate and lighten blue slightly so it's not completely unreadable
+Blue
+{
+	#101040  #3030FF
+Console:
+	#000000  #20207F    0 127
+	#4040FF  #DEDEFF  128 256
+Flat:
+	#9999FF
+}
+
+// mod-specific minihud font colors
+MiniDemoHUD // classic desaturated aqua hud borders
+{
+	#000000  #080C10    0  50
+	#080C10  #101820   51 101
+	#101820  #203040  102 151
+	#203040  #40607F  152 203
+	#40607F  #608FBF  204 255
+}
+MiniIbukiHUD // dark gray hud borders
+{
+	#000000  #1A1A1A    0  50
+	#1A1A1A  #262626   51 101
+	#262626  #404040  102 151
+	#404040  #4D4D4D  152 203
+	#4D4D4D  #666666  204 255
+}
+MiniSayaHUD // desaturated dark red hud borders
+{
+	#000000  #100808    0  50
+	#100808  #201010   51 101
+	#201010  #402020  102 151
+	#402020  #7F4040  152 203
+	#7F4040  #BF6060  204 255
+}
+MiniKirinHUD // brown-ish hud borders
+{
+	#000000  #331A1A    0  50
+	#331A1A  #663B33   51 101
+	#663B33  #99664D  102 151
+	#99664D  #CC9966  152 203
+	#CC9966  #FFD480  204 255
+}
+MiniMarisaHUD // silvery white hud borders
+{
+	#000000  #1F2233    0  50
+	#1F2233  #475266   51 101
+	#475266  #7A8A99  102 151
+	#7A8A99  #B8C5CC  152 203
+	#B8C5CC  #FFFFFF  204 255
+}
+MiniVoidHUD // faint violet hud borders
+{
+	#000000  #2D2050    0  50
+	#2D2050  #49347D   51 101
+	#49347D  #5E439A  102 151
+	#5E439A  #7F66B3  152 203
+	#7F66B3  #B09FCD  204 255
+}
+// general minihud font colors
+MiniWhite
+{
+	#000000  #FFFFFF
+}
+MiniRed
+{
+	#000000  #FF0000
+}
+MiniGreen
+{
+	#000000  #00FF00
+}
+MiniBlue
+{
+	#000000  #3030FF
+}
+MiniCyan
+{
+	#000000  #00FFFF
+}
+MiniYellow
+{
+	#000000  #FFE030
+}
+MiniPurple
+{
+	#000000  #8000FF
+}
+// specialized minihud font colors
+MiniBrass
+{
+	#000000  #330800    0  50
+	#330800  #662200   51 101
+	#662200  #994D00  102 151
+	#994D00  #CC8800  152 203
+	#CC8800  #FFD500  204 255
+}
+MiniSilver
+{
+	#000000  #262933    0  50
+	#262933  #4D5366   51 101
+	#4D5366  #737C99  102 151
+	#737C99  #99A6CC  152 203
+	#99A6CC  #BFCFFF  204 255
+}
+MiniGold
+{
+	#000000  #332A00    0  50
+	#332A00  #806A00   51 101
+	#806A00  #CCAA00  102 151
+	#CCAA00  #E6C939  152 203
+	#E6C939  #FFEA80  204 255
+}
+MiniMana
+{
+	#000000  #002233    0  50
+	#002233  #002266   51 101
+	#002266  #000099  102 151
+	#000099  #4400CC  152 203
+	#4400CC  #AA00FF  204 255
+}
+MiniCrimson // Anarukon blood
+{
+	#000000  #330022    0  50
+	#330022  #660033   51 101
+	#660033  #990033  102 151
+	#880033  #CC0022  152 203
+	#CC0022  #FF0000  204 255
+}
+MiniEldritch // funky green, usually for wild mana
+{
+	#000000  #003333    0  50
+	#003333  #006644   51 101
+	#006644  #009944  102 151
+	#009944  #00CC33  152 203
+	#00CC33  #00FF00  204 255
+}
+MiniKinylum // aqua-blue gradient
+{
+	#000000  #001133    0  50
+	#001133  #003366   51 101
+	#003366  #006699  102 151
+	#006699  #00AACC  152 203
+	#00AACC  #00FFFF  204 255
+}
+MiniNokron // red-pink gradient
+{
+	#000000  #330033    0  50
+	#330033  #660044   51 101
+	#660044  #990033  102 151
+	#990033  #CC0000  152 203
+	#CC0000  #FF5500  204 255
+}
+MiniNokorokinylum // violet-blue gradient
+{
+	#000000  #000055    0  50
+	#000055  #1C00AA   51 101
+	#1C00AA  #5500FF  102 151
+	#5500FF  #AA55FF  152 203
+	#AA55FF  #E3AAFF  204 255
+}
+MiniDemoBlue // Blue from Demo-chan's chassis
+{
+	#000000  #110A33    0  50
+	#110A33  #1F1F66   51 101
+	#1F1F66  #3D4D99  102 151
+	#3D4D99  #6688CC  152 203
+	#6688CC  #99CCFF  204 255
+}
+MiniDemoPink // Pink from Demo-chan's chassis
+{
+	#000000  #330022    0  50
+	#330022  #66144B   51 101
+	#66144B  #993D7A  102 151
+	#993D7A  #CC7AB1  152 203
+	#CC7AB1  #FFCCEE  204 255
+}
+// more colors will be added as needed over time
+// flash colors (flat, cut to black on outline/shadow)
+MiniFlash // "obtained"
+{
+	#000000  #FFC040    0  50
+	#FFC040  #FFC040   51 255
+}
+MiniRedFlash // "low health"
+{
+	#000000  #FF0000    0  50
+	#FF0000  #FF0000   51 255
+}

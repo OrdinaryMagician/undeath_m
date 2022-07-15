@@ -7,4 +7,5 @@ IWad
 	Config = "UNDEATH"
 	MapInfo = "mapinfo/mindefaults.txt"
 	NoKeyboardCheats
+	//NoAutomap
 }
